@@ -7,6 +7,7 @@ const portfolioItems = [
     category: 'Lifestyle',
     metric: 'Estética SMM',
     videoUrl: '/reels/crea_location.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/10',
     description: 'Vídeo estético mostrando la ubicación de CREA en Sant Just Desvern, Barcelona.'
   },
@@ -16,6 +17,7 @@ const portfolioItems = [
     category: 'Lifestyle',
     metric: 'Detrás de Cámaras',
     videoUrl: '/reels/crea_team.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#C48B71]/15',
     description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
   },
@@ -25,6 +27,7 @@ const portfolioItems = [
     category: 'Lifestyle',
     metric: '+18% CTR en Ads',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#F1ECE4] via-[#FAF8F5] to-[#7A8471]/5',
     description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
   },
@@ -34,6 +37,7 @@ const portfolioItems = [
     category: 'Beauty',
     metric: 'Orgánico Viral',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/15',
     description: 'ASMR unboxing y prueba de tonos con voz en off de oratoria persuasiva.'
   },
@@ -43,6 +47,7 @@ const portfolioItems = [
     category: 'Fashion',
     metric: '+42% Engagement',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#F1ECE4] via-[#FAF8F5] to-[#C48B71]/10',
     description: 'Macro tomas estéticas mostrando los detalles de piezas de plata reciclada.'
   },
@@ -52,6 +57,7 @@ const portfolioItems = [
     category: 'Lifestyle',
     metric: '85K Reproducciones',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80',
     bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/20',
     description: 'Contenido lifestyle estético integrando el uso de tapete antideslizante.'
   }
@@ -98,6 +104,7 @@ export default function PortfolioUGC() {
             {/* Live Video Preview Background */}
             <video
               src={item.videoUrl}
+              poster={item.posterUrl}
               className="absolute inset-0 w-full h-full object-cover -z-20 scale-100 group-hover:scale-[1.03] transition-transform duration-700"
               muted
               loop

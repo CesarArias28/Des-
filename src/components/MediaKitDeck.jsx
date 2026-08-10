@@ -120,6 +120,7 @@ export default function MediaKitDeck() {
                 <div className="relative aspect-[9/16] w-full rounded-[18px] overflow-hidden border border-soft-sand shadow-md bg-soft-sand">
                   <video 
                     src="/reels/crea_location.mp4" 
+                    poster="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
                     className="w-full h-full object-cover"
                     autoPlay
                     controls
@@ -136,6 +137,7 @@ export default function MediaKitDeck() {
                 <div className="relative aspect-[9/16] w-full rounded-[18px] overflow-hidden border border-soft-sand shadow-md bg-soft-sand">
                   <video 
                     src="/reels/crea_team.mp4" 
+                    poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
                     className="w-full h-full object-cover"
                     autoPlay
                     controls
