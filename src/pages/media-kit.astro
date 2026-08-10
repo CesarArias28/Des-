@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import MediaKitDeck from '../components/MediaKitDeck.jsx';
+---
+
+<Layout title="Des | Dossier de Presentación & Media Kit" description="Presentación de tarifas, paquetes, testimonios y portafolio UGC de Des para marcas y colaboradores conscientes.">
+  <Navbar />
+  
+  <main class="flex-grow bg-bone flex flex-col justify-center items-center py-12 md:py-20 px-6 relative overflow-hidden">
+    <!-- Decorative background glow -->
+    <div class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-soft-sand/35 blur-3xl"></div>
+    <div class="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-sage/5 blur-3xl"></div>
+    
+    <div class="w-full max-w-4xl flex flex-col gap-6 items-center text-center relative z-10">
+      <div class="flex flex-col gap-1.5 mb-2">
+        <span class="text-xs font-semibold tracking-[0.25em] uppercase text-warm-gray">Pitch Deck & Rates</span>
+        <h1 class="font-serif text-3xl md:text-4xl font-medium text-charcoal">Dossier de Presentación</h1>
+        <p class="text-xs text-warm-gray">Usa las flechas del teclado <kbd class="px-1.5 py-0.5 border border-soft-sand bg-soft-sand/30 rounded text-[10px] font-sans">←</kbd> <kbd class="px-1.5 py-0.5 border border-soft-sand bg-soft-sand/30 rounded text-[10px] font-sans">→</kbd> para cambiar de diapositiva.</p>
+      </div>
+
+      <!-- React Slides Deck -->
+      <MediaKitDeck client:load />
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

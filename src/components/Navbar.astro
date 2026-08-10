@@ -1,0 +1,120 @@
+---
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-soft-sand/40 bg-bone/80 backdrop-blur-md transition-all duration-300" id="navbar">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12 transition-all duration-300" id="navbar-container">
+    <!-- Logo -->
+    <a href="#" class="group font-serif text-2xl font-semibold tracking-wide text-charcoal flex items-center gap-1">
+      Des<span class="text-terracotta group-hover:translate-x-0.5 transition-transform duration-300">.</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wider uppercase text-warm-gray">
+      <a href="#servicios" class="hover:text-charcoal transition-colors duration-200 text-xs">Servicios</a>
+      <a href="#sobre-mi" class="hover:text-charcoal transition-colors duration-200 text-xs">Sobre Mí</a>
+      <a href="#portafolio" class="hover:text-charcoal transition-colors duration-200 text-xs">Portafolio UGC</a>
+      <a href="#faq" class="hover:text-charcoal transition-colors duration-200 text-xs">FAQ</a>
+    </nav>
+
+    <!-- Desktop Action Button -->
+    <div class="hidden md:block">
+      <a 
+        href="#contacto" 
+        class="inline-block rounded-full border border-sage px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-sage hover:bg-sage hover:text-bone transition-all duration-300 hover:shadow-md hover:shadow-sage/10"
+      >
+        Trabajemos juntas
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      id="menu-btn" 
+      class="flex h-10 w-10 items-center justify-center rounded-full border border-soft-sand/60 text-charcoal hover:bg-soft-sand/50 transition-colors md:hidden focus:outline-none"
+      aria-label="Abrir menú"
+    >
+      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path id="menu-icon-1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16" class="transition-transform duration-300 origin-center"></path>
+        <path id="menu-icon-2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" class="opacity-100 transition-opacity duration-300"></path>
+        <path id="menu-icon-3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16" class="transition-transform duration-300 origin-center"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div 
+    id="mobile-menu" 
+    class="pointer-events-none absolute top-full left-0 w-full overflow-hidden bg-bone border-b border-soft-sand/60 opacity-0 shadow-lg transition-all duration-300 ease-in-out md:hidden"
+    style="max-height: 0px;"
+  >
+    <nav class="flex flex-col gap-4 px-8 py-6 text-base font-medium tracking-wide text-warm-gray">
+      <a href="#servicios" class="mobile-link hover:text-charcoal transition-colors py-2">Servicios</a>
+      <a href="#sobre-mi" class="mobile-link hover:text-charcoal transition-colors py-2">Sobre Mí</a>
+      <a href="#portafolio" class="mobile-link hover:text-charcoal transition-colors py-2">Portafolio UGC</a>
+      <a href="#faq" class="mobile-link hover:text-charcoal transition-colors py-2">FAQ</a>
+      <div class="h-px bg-soft-sand/60 my-2"></div>
+      <a 
+        href="#contacto" 
+        class="mobile-link inline-block rounded-full border border-sage bg-sage text-bone text-center px-6 py-3 text-sm font-semibold uppercase tracking-wider hover:bg-sage/90 transition-all duration-300"
+      >
+        Trabajemos juntas
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon1 = document.getElementById('menu-icon-1');
+  const menuIcon2 = document.getElementById('menu-icon-2');
+  const menuIcon3 = document.getElementById('menu-icon-3');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen && mobileMenu && menuIcon1 && menuIcon2 && menuIcon3) {
+      // Open menu
+      mobileMenu.style.maxHeight = '350px';
+      mobileMenu.classList.remove('pointer-events-none');
+      mobileMenu.classList.add('opacity-100');
+      
+      // Animate hamburger to X
+      menuIcon1.setAttribute('d', 'M6 18L18 6');
+      menuIcon2.classList.add('opacity-0');
+      menuIcon3.setAttribute('d', 'M6 6l12 12');
+    } else if (mobileMenu && menuIcon1 && menuIcon2 && menuIcon3) {
+      // Close menu
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.classList.add('pointer-events-none');
+      mobileMenu.classList.remove('opacity-100');
+      
+      // Animate X back to hamburger
+      menuIcon1.setAttribute('d', 'M4 6h16');
+      menuIcon2.classList.remove('opacity-0');
+      menuIcon3.setAttribute('d', 'M4 18h16');
+    }
+  }
+
+  menuBtn?.addEventListener('click', toggleMenu);
+  
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (isMenuOpen) toggleMenu();
+    });
+  });
+
+  // Shrink header on scroll
+  const navbarContainer = document.getElementById('navbar-container');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbarContainer?.classList.remove('py-4');
+      navbarContainer?.classList.add('py-2');
+    } else {
+      navbarContainer?.classList.remove('py-2');
+      navbarContainer?.classList.add('py-4');
+    }
+  });
+</script>

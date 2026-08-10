@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* Wellness Palette Custom Colors */
+  --color-bone: #FAF8F5;
+  --color-soft-sand: #F1ECE4;
+  --color-charcoal: #1C1C1C;
+  --color-warm-gray: #6E6862;
+  --color-sage: #7A8471;
+  --color-terracotta: #C48B71;
+
+  /* Custom Fonts */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Global Base Styles */
+body {
+  background-color: var(--color-bone);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Premium Custom Selection */
+::selection {
+  background-color: rgba(122, 132, 113, 0.2); /* sage color with opacity */
+  color: var(--color-charcoal);
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-bone);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-soft-sand);
+  border-radius: 9999px;
+  border: 2px solid var(--color-bone);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-sage);
+}
