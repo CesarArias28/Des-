@@ -90,31 +90,31 @@ const UgcCard = ({ item, onSelect }) => {
       onClick={() => onSelect(item)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative aspect-[9/16] w-full rounded-[20px] overflow-hidden cursor-pointer shadow-sm hover:shadow-xl hover:scale-[1.01] hover:border-sage/40 transition-all duration-500 flex flex-col justify-between p-6 border border-soft-sand/40 group bg-gradient-to-br"
+      className="relative aspect-[9/16] w-full rounded-[20px] overflow-hidden cursor-pointer shadow-sm hover:shadow-xl hover:scale-[1.01] hover:border-sage/40 transition-all duration-500 flex flex-col justify-between p-6 border border-soft-sand/40 group bg-charcoal"
     >
       {/* Live Video Preview Background */}
       <video
         ref={videoRef}
         src={item.videoUrl}
         poster={item.posterUrl}
-        className="absolute inset-0 w-full h-full object-cover -z-20 scale-100 group-hover:scale-[1.03] transition-transform duration-700"
+        className="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-[1.03] transition-transform duration-700"
         muted
         loop
         playsInline
         preload="metadata"
       />
       {/* Gradient Overlay for aesthetic blending and readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/5 via-charcoal/10 to-[#FAF8F5]/90 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/10 via-charcoal/20 to-[#FAF8F5]/90" />
 
       {/* Card Header (Metric Tag) */}
-      <div className="self-start">
+      <div className="self-start relative z-10">
         <span className="bg-[#FAF8F5]/85 backdrop-blur-sm text-charcoal px-3.5 py-1.5 rounded-full text-[10px] font-semibold tracking-widest uppercase shadow-sm">
           {item.metric}
         </span>
       </div>
 
       {/* Card Center (Play Icon Overlay) */}
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center relative z-10">
         <div className="bg-[#FAF8F5]/95 backdrop-blur-sm text-charcoal h-14 w-14 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-sage group-hover:text-[#FAF8F5] transition-all duration-300">
           <svg className="h-5 w-5 ml-0.5 fill-current" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
@@ -123,7 +123,7 @@ const UgcCard = ({ item, onSelect }) => {
       </div>
 
       {/* Card Footer */}
-      <div className="bg-[#FAF8F5]/85 backdrop-blur-md border border-soft-sand/40 p-4 rounded-[15px] shadow-sm flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] transition-transform duration-300">
+      <div className="bg-[#FAF8F5]/85 backdrop-blur-md border border-soft-sand/40 p-4 rounded-[15px] shadow-sm flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] transition-transform duration-300 relative z-10">
         <div className="flex justify-between items-center">
           <h3 className="font-serif text-base font-semibold text-charcoal">
             {item.title}
