@@ -125,7 +125,7 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full max-w-none">
 
         <!-- ROW 1 - BLOCK A (TEXT): Mentorías de Oratoria -->
-        <div class="bg-[#D6CBE4] text-[#2C243B] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="bg-[#D6CBE4] text-[#2C243B] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <div class="flex flex-col gap-4">
             <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5B4670]">
               PROGRAMA 1:1 • PERSONALIZADO
@@ -147,49 +147,31 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
         </div>
 
         <!-- ROW 1 - BLOCK B (IMAGE 1): sobre_mi_1.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#D5CDC4]">
-          <!-- Ambient Blurred Background Fill -->
-          <Image 
-            src={sobreMi1} 
-            alt="" 
-            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
-            width={400}
-            height={400}
-          />
-          <!-- Crisp Full Uncropped Portrait -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <Image 
             src={sobreMi1} 
             alt="Des - Mentora de Oratoria" 
-            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
         </div>
 
         <!-- ROW 2 - BLOCK C (IMAGE 2): sobre_mi_2.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-2 md:order-1 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#C9C2B8]">
-          <!-- Ambient Blurred Background Fill -->
-          <Image 
-            src={sobreMi2} 
-            alt="" 
-            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
-            width={400}
-            height={400}
-          />
-          <!-- Crisp Full Uncropped Portrait -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-2 md:order-1 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <Image 
             src={sobreMi2} 
             alt="Des - Creadora de Contenido UGC" 
-            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
         </div>
 
         <!-- ROW 2 - BLOCK D (TEXT): Creación de Contenido UGC (Color Verde Sage de la paleta) -->
-        <div class="bg-[#7A8471] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] order-1 md:order-2 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="bg-[#7A8471] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] order-1 md:order-2 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <div class="flex flex-col gap-4">
             <span class="text-xs font-black uppercase tracking-[0.25em] text-[#E8EDDF]">
               CONTENIDO 9:16 ENFOCADO A CONVERSIÓN
@@ -211,7 +193,7 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
         </div>
 
         <!-- ROW 3 - BLOCK E (TEXT): Social Media Management -->
-        <div class="bg-[#2B2D2F] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] order-3 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="bg-[#2B2D2F] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] order-3 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <div class="flex flex-col gap-4">
             <span class="text-xs font-black uppercase tracking-[0.25em] text-terracotta">
               MARCAS E-COMMERCE & ESTRATEGIA
@@ -233,24 +215,15 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
         </div>
 
         <!-- ROW 3 - BLOCK F (IMAGE 3): sobre_mi_3.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-4 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#D0C7BF]">
-          <!-- Ambient Blurred Background Fill -->
-          <Image 
-            src={sobreMi3} 
-            alt="" 
-            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
-            width={400}
-            height={400}
-          />
-          <!-- Crisp Full Uncropped Portrait -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-4 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
           <Image 
             src={sobreMi3} 
             alt="Des - Social Media Manager" 
-            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
         </div>
 
       </div>
