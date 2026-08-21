@@ -90,7 +90,7 @@ const UgcCard = ({ item, onSelect }) => {
       onClick={() => onSelect(item)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative aspect-[9/16] w-[310px] sm:w-[360px] lg:w-[410px] shrink-0 snap-start rounded-[28px] sm:rounded-[36px] lg:rounded-[44px] overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl hover:scale-[1.02] hover:border-sage/50 transition-all duration-500 flex flex-col justify-between p-7 border border-soft-sand/50 group bg-charcoal"
+      className="relative aspect-[9/16] w-[280px] sm:w-[320px] shrink-0 snap-start rounded-[22px] overflow-hidden cursor-pointer shadow-md hover:shadow-2xl hover:scale-[1.02] hover:border-sage/50 transition-all duration-500 flex flex-col justify-between p-6 border border-soft-sand/50 group bg-charcoal"
     >
       {/* Live Video Preview Background */}
       <video
@@ -103,36 +103,36 @@ const UgcCard = ({ item, onSelect }) => {
         playsInline
         preload="metadata"
       />
-      {/* Gradient Overlay for aesthetic blending and readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/10 via-charcoal/20 to-[#FAF8F5]/90" />
+      {/* Gradient Overlay for aesthetic blending and legibility - Very subtle */}
+      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-transparent to-charcoal/50" />
 
       {/* Card Header (Metric Tag) */}
       <div className="self-start relative z-10">
-        <span className="bg-[#FAF8F5]/90 backdrop-blur-md text-charcoal px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase shadow-sm">
+        <span className="bg-[#FAF8F5]/85 backdrop-blur-sm text-charcoal px-3.5 py-1.5 rounded-full text-[10px] font-semibold tracking-widest uppercase shadow-sm">
           {item.metric}
         </span>
       </div>
 
       {/* Card Center (Play Icon Overlay) */}
       <div className="flex items-center justify-center relative z-10">
-        <div className="bg-[#FAF8F5]/95 backdrop-blur-sm text-charcoal h-16 w-16 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-sage group-hover:text-[#FAF8F5] transition-all duration-300">
-          <svg className="h-6 w-6 ml-0.5 fill-current" viewBox="0 0 24 24">
+        <div className="bg-[#FAF8F5]/95 backdrop-blur-sm text-charcoal h-14 w-14 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-sage group-hover:text-[#FAF8F5] transition-all duration-300">
+          <svg className="h-5 w-5 ml-0.5 fill-current" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
       </div>
 
       {/* Card Footer */}
-      <div className="bg-[#FAF8F5]/90 backdrop-blur-md border border-soft-sand/40 p-5 rounded-[22px] shadow-sm flex flex-col gap-2 transform group-hover:translate-y-[-2px] transition-transform duration-300 relative z-10">
+      <div className="bg-[#FAF8F5]/85 backdrop-blur-md border border-soft-sand/40 p-4 rounded-[15px] shadow-sm flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] transition-transform duration-300 relative z-10">
         <div className="flex justify-between items-center">
-          <h3 className="font-serif text-lg font-semibold text-charcoal">
+          <h3 className="font-serif text-base font-semibold text-charcoal">
             {item.title}
           </h3>
-          <span className="text-xs uppercase font-bold tracking-wider text-sage">
+          <span className="text-[10px] uppercase font-bold tracking-wider text-sage">
             {item.category}
           </span>
         </div>
-        <p className="text-xs text-warm-gray leading-relaxed">
+        <p className="text-[11px] text-warm-gray leading-relaxed">
           {item.description}
         </p>
       </div>
@@ -151,7 +151,7 @@ export default function PortfolioUGC() {
 
   const scrollCarousel = (direction) => {
     if (carouselRef.current) {
-      const scrollAmount = direction === 'left' ? -430 : 430;
+      const scrollAmount = direction === 'left' ? -340 : 340;
       carouselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
