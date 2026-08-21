@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import PortfolioUGC from '../components/PortfolioUGC.jsx';
+import TestimonialCarousel from '../components/TestimonialCarousel.jsx';
 import FAQ from '../components/FAQ.jsx';
 import { Image } from 'astro:assets';
 import desProfile from '../assets/des_profile.jpg';
@@ -40,9 +41,6 @@ import desProfile from '../assets/des_profile.jpg';
             Comunica con propósito, <br />
             <span class="italic text-soft-sand">conecta con alma</span>.
           </h1>
-          <p class="text-soft-sand/80 text-base md:text-lg leading-relaxed max-w-lg">
-            Ayudo a marcas conscientes a posicionarse a través de estrategias digitales y contenido vertical UGC. Como <strong class="font-medium text-[#FAF8F5]">Licenciada en Comunicación Social</strong>, aporto el respaldo académico y estratégico que tu marca necesita para destacar auténticamente.
-          </p>
           
           <!-- Segmented CTAs -->
           <div class="flex flex-col sm:flex-row gap-4 mt-4">
@@ -165,6 +163,9 @@ import desProfile from '../assets/des_profile.jpg';
         </div>
       </div>
     </section>
+
+    <!-- Testimonios & Video Reviews Carousel -->
+    <TestimonialCarousel client:visible />
 
     <!-- Sobre Mí Section -->
     <section class="py-20 px-6 md:px-12 bg-soft-sand/20" id="sobre-mi">
