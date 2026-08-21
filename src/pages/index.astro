@@ -18,11 +18,11 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
   <main class="flex-grow">
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-start overflow-hidden px-6 md:px-12 lg:px-24 py-32 bg-charcoal">
-      <!-- Background Video -->
+      <!-- Background Video (scale-[1.05] to eliminate any video letterboxing black bars) -->
       <video 
         src="/reels/hero_video.mp4"
         poster="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=1920&q=80"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover scale-[1.05] pointer-events-none"
         muted
         loop
         playsInline
@@ -82,6 +82,17 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
             <p class="text-warm-gray text-base lg:text-lg leading-relaxed italic pr-4">
               "La comunicación con propósito no se trata de vender en masa, sino de entablar conexiones reales con personas reales."
             </p>
+            <div>
+              <button 
+                id="open-about-modal-btn"
+                class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-charcoal border-b border-charcoal pb-1 hover:text-terracotta hover:border-terracotta transition-all cursor-pointer"
+              >
+                <span>Leer trayectoria completa</span>
+                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </div>
           </div>
           
           <!-- Biography right -->
@@ -151,7 +162,7 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
           <Image 
             src={sobreMi1} 
             alt="Des - Mentora de Oratoria" 
-            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-[center_20%] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
@@ -163,7 +174,7 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
           <Image 
             src={sobreMi2} 
             alt="Des - Creadora de Contenido UGC" 
-            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-[center_20%] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
@@ -219,7 +230,7 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
           <Image 
             src={sobreMi3} 
             alt="Des - Social Media Manager" 
-            class="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-700 ease-out"
+            class="w-full h-full object-cover object-[center_20%] group-hover:scale-[1.04] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
