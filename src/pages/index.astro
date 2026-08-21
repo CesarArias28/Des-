@@ -147,27 +147,45 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
         </div>
 
         <!-- ROW 1 - BLOCK B (IMAGE 1): sobre_mi_1.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#D5CDC4]">
+          <!-- Ambient Blurred Background Fill -->
+          <Image 
+            src={sobreMi1} 
+            alt="" 
+            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
+            width={400}
+            height={400}
+          />
+          <!-- Crisp Full Uncropped Portrait -->
           <Image 
             src={sobreMi1} 
             alt="Des - Mentora de Oratoria" 
-            class="w-full h-full object-cover object-[center_15%] group-hover:scale-[1.05] transition-transform duration-700 ease-out"
+            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
         </div>
 
         <!-- ROW 2 - BLOCK C (IMAGE 2): sobre_mi_2.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-2 md:order-1 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-2 md:order-1 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#C9C2B8]">
+          <!-- Ambient Blurred Background Fill -->
+          <Image 
+            src={sobreMi2} 
+            alt="" 
+            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
+            width={400}
+            height={400}
+          />
+          <!-- Crisp Full Uncropped Portrait -->
           <Image 
             src={sobreMi2} 
             alt="Des - Creadora de Contenido UGC" 
-            class="w-full h-full object-cover object-[center_15%] group-hover:scale-[1.05] transition-transform duration-700 ease-out"
+            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
         </div>
 
         <!-- ROW 2 - BLOCK D (TEXT): Creación de Contenido UGC (Color Verde Sage de la paleta) -->
@@ -215,15 +233,24 @@ import sobreMi3 from '../assets/sobre_mi_3.jpg';
         </div>
 
         <!-- ROW 3 - BLOCK F (IMAGE 3): sobre_mi_3.jpg -->
-        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-4 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5">
+        <div class="relative h-[440px] sm:h-[500px] lg:h-[540px] rounded-[28px] sm:rounded-[36px] lg:rounded-[48px] overflow-hidden group order-4 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 bg-[#D0C7BF]">
+          <!-- Ambient Blurred Background Fill -->
+          <Image 
+            src={sobreMi3} 
+            alt="" 
+            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-125 opacity-75"
+            width={400}
+            height={400}
+          />
+          <!-- Crisp Full Uncropped Portrait -->
           <Image 
             src={sobreMi3} 
             alt="Des - Social Media Manager" 
-            class="w-full h-full object-cover object-[center_15%] group-hover:scale-[1.05] transition-transform duration-700 ease-out"
+            class="relative z-10 w-full h-full object-contain p-3 sm:p-5 lg:p-6 drop-shadow-xl group-hover:scale-[1.03] transition-transform duration-700 ease-out"
             width={1200}
             height={1000}
           />
-          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 via-transparent to-transparent pointer-events-none z-20"></div>
         </div>
 
       </div>
