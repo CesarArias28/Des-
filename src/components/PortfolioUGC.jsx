@@ -128,7 +128,7 @@ const UgcCard = ({ item, onSelect }) => {
           <h3 className="font-serif text-base font-medium text-[#FAF8F5] drop-shadow-sm">
             {item.title}
           </h3>
-          <span className="text-[10px] uppercase font-bold tracking-wider text-[#B8FF44] bg-white/10 px-2 py-0.5 rounded-full border border-white/20 backdrop-blur-sm">
+          <span className="text-[10px] uppercase font-bold tracking-wider text-[#E0A890] bg-[#C48B71]/20 px-2.5 py-0.5 rounded-full border border-[#C48B71]/40 backdrop-blur-sm shadow-sm">
             {item.category}
           </span>
         </div>
