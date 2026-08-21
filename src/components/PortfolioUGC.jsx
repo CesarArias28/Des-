@@ -106,33 +106,33 @@ const UgcCard = ({ item, onSelect }) => {
       {/* Gradient Overlay for aesthetic blending and legibility - Very subtle */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-transparent to-charcoal/50" />
 
-      {/* Card Header (Metric Tag) */}
+      {/* Card Header (Metric Tag Liquid Glass) */}
       <div className="self-start relative z-10">
-        <span className="bg-[#FAF8F5]/85 backdrop-blur-sm text-charcoal px-3.5 py-1.5 rounded-full text-[10px] font-semibold tracking-widest uppercase shadow-sm">
+        <span className="bg-white/20 backdrop-blur-md border border-white/35 text-[#FAF8F5] px-3.5 py-1.5 rounded-full text-[10px] font-semibold tracking-widest uppercase shadow-md shadow-black/10">
           {item.metric}
         </span>
       </div>
 
-      {/* Card Center (Play Icon Overlay) */}
+      {/* Card Center (Play Icon Overlay Liquid Glass) */}
       <div className="flex items-center justify-center relative z-10">
-        <div className="bg-[#FAF8F5]/95 backdrop-blur-sm text-charcoal h-14 w-14 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-sage group-hover:text-[#FAF8F5] transition-all duration-300">
+        <div className="bg-white/25 backdrop-blur-lg border border-white/40 text-[#FAF8F5] h-14 w-14 rounded-full flex items-center justify-center shadow-xl shadow-black/20 group-hover:scale-110 group-hover:bg-sage group-hover:border-sage transition-all duration-300">
           <svg className="h-5 w-5 ml-0.5 fill-current" viewBox="0 0 24 24">
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
       </div>
 
-      {/* Card Footer */}
-      <div className="bg-[#FAF8F5]/85 backdrop-blur-md border border-soft-sand/40 p-4 rounded-[15px] shadow-sm flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] transition-transform duration-300 relative z-10">
+      {/* Card Footer (Liquid Glass Panel) */}
+      <div className="bg-white/15 backdrop-blur-xl border border-white/30 p-4 rounded-[18px] shadow-[0_8px_32px_0_rgba(0,0,0,0.25)] flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] group-hover:border-white/50 transition-all duration-300 relative z-10">
         <div className="flex justify-between items-center">
-          <h3 className="font-serif text-base font-semibold text-charcoal">
+          <h3 className="font-serif text-base font-medium text-[#FAF8F5] drop-shadow-sm">
             {item.title}
           </h3>
-          <span className="text-[10px] uppercase font-bold tracking-wider text-sage">
+          <span className="text-[10px] uppercase font-bold tracking-wider text-[#B8FF44] bg-white/10 px-2 py-0.5 rounded-full border border-white/20 backdrop-blur-sm">
             {item.category}
           </span>
         </div>
-        <p className="text-[11px] text-warm-gray leading-relaxed">
+        <p className="text-[11px] text-[#FAF8F5]/85 leading-relaxed font-light drop-shadow-sm">
           {item.description}
         </p>
       </div>
