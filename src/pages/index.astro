@@ -7,6 +7,9 @@ import TestimonialCarousel from '../components/TestimonialCarousel.jsx';
 import FAQ from '../components/FAQ.jsx';
 import { Image } from 'astro:assets';
 import desProfile from '../assets/des_profile.jpg';
+import sobreMi1 from '../assets/sobre_mi_1.jpg';
+import sobreMi2 from '../assets/sobre_mi_2.jpg';
+import sobreMi3 from '../assets/sobre_mi_3.jpg';
 ---
 
 <Layout title="Des | Social Media Manager, UGC & Mentora de Oratoria" description="Portafolio y servicios de Des. Licenciada en Comunicación Social especializada en la creación de contenido UGC y mentoría de oratoria.">
@@ -41,6 +44,9 @@ import desProfile from '../assets/des_profile.jpg';
             Comunica con propósito, <br />
             <span class="italic text-soft-sand">conecta con alma</span>.
           </h1>
+          <p class="text-soft-sand/80 text-base md:text-lg leading-relaxed max-w-lg">
+            Ayudo a marcas conscientes a posicionarse a través de estrategias digitales y contenido vertical UGC. Como <strong class="font-medium text-[#FAF8F5]">Licenciada en Comunicación Social</strong>, aporto el respaldo académico y estratégico que tu marca necesita para destacar auténticamente.
+          </p>
           
           <!-- Segmented CTAs -->
           <div class="flex flex-col sm:flex-row gap-4 mt-4">
@@ -61,106 +67,114 @@ import desProfile from '../assets/des_profile.jpg';
       </div>
     </section>
 
-    <!-- Los 3 Pilares Section -->
-    <section class="py-20 px-6 md:px-12 bg-bone border-t border-soft-sand/30" id="servicios">
-      <div class="mx-auto max-w-7xl">
-        <!-- Section Header -->
-        <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-3">
-          <span class="text-xs font-semibold tracking-[0.2em] uppercase text-warm-gray">Servicios & Mentoría</span>
-          <h2 class="font-serif text-3xl md:text-4xl font-medium tracking-tight text-charcoal">
-            Tres pilares estratégicos para potenciar tu mensaje
-          </h2>
-          <div class="h-0.5 w-16 bg-terracotta/40 mx-auto mt-2"></div>
-        </div>
-        
-        <!-- Pillars Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Los 3 Pilares Section - Rediseño Bento Checkerboard Grid (Inspirado en la Referencia) -->
+    <section class="bg-charcoal py-0 overflow-hidden" id="servicios">
+      
+      <!-- Grid Riel: Alternancia de bloques de texto estilizados con imágenes de gran impacto -->
+      <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+
+        <!-- ROW 1 - BLOCK A (TEXT): Mentorías de Oratoria -->
+        <div class="bg-[#D6CBE4] text-[#2C243B] p-10 md:p-16 lg:p-20 flex flex-col justify-between items-start gap-8 min-h-[480px] lg:min-h-[560px]">
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5B4670]">
+              PROGRAMA 1:1 • PERSONALIZADO
+            </span>
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#241A33]">
+              MENTORÍA DE ORATORIA
+            </h2>
+            <p class="text-sm md:text-base font-normal leading-relaxed text-[#3D324F] max-w-md mt-2">
+              Pierde el miedo a la cámara, domina tu voz y construye una comunidad leal para monetizar tu presencia digital con autenticidad.
+            </p>
+          </div>
           
-          <!-- Pillar 1 -->
-          <div class="group flex flex-col bg-soft-sand/20 hover:bg-soft-sand/35 border border-soft-sand/40 hover:border-sage/30 rounded-[20px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-soft-sand/20">
-            <span class="font-serif text-5xl font-light text-terracotta/40 mb-6 block group-hover:text-terracotta transition-colors duration-300">01</span>
-            <h3 class="font-serif text-xl md:text-2xl font-medium text-charcoal mb-4">
-              Social Media Strategy
-            </h3>
-            <p class="text-warm-gray text-sm leading-relaxed mb-6 flex-grow">
-              Gestión integral, auditoría profunda y estrategia de comunicación digital para marcas conscientes de e-commerce que buscan conectar orgánicamente con sus clientes.
-            </p>
-            <ul class="text-xs text-warm-gray flex flex-col gap-2 mb-8 border-t border-soft-sand/60 pt-4">
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Auditoría de marca & canales
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Planificación & dirección creativa
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Análisis de métricas y optimización
-              </li>
-            </ul>
-            <a 
-              href="#contacto" 
-              class="inline-block text-center rounded-full border border-warm-gray/40 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-charcoal hover:bg-charcoal hover:text-bone hover:border-charcoal transition-all duration-300"
-            >
-              Consultar servicio
-            </a>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="group flex flex-col bg-soft-sand/20 hover:bg-soft-sand/35 border border-soft-sand/40 hover:border-sage/30 rounded-[20px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-soft-sand/20">
-            <span class="font-serif text-5xl font-light text-terracotta/40 mb-6 block group-hover:text-terracotta transition-colors duration-300">02</span>
-            <h3 class="font-serif text-xl md:text-2xl font-medium text-charcoal mb-4">
-              UGC & Content Creation
-            </h3>
-            <p class="text-warm-gray text-sm leading-relaxed mb-6 flex-grow">
-              Creación de vídeos orgánicos en formato vertical (9:16) con gancho de alta retención para campañas y redes sociales. Especializada en nichos de belleza, moda y lifestyle.
-            </p>
-            <ul class="text-xs text-warm-gray flex flex-col gap-2 mb-8 border-t border-soft-sand/60 pt-4">
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Guionizado & psicología de ventas
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Formato Reels / TikTok estético
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Enfoque en conversión y fidelización
-              </li>
-            </ul>
-            <a 
-              href="#portafolio" 
-              class="inline-block text-center rounded-full border border-warm-gray/40 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-charcoal hover:bg-charcoal hover:text-bone hover:border-charcoal transition-all duration-300"
-            >
-              Ver Portafolio
-            </a>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="group flex flex-col bg-soft-sand/20 hover:bg-soft-sand/35 border border-soft-sand/40 hover:border-sage/30 rounded-[20px] p-8 md:p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-soft-sand/20">
-            <span class="font-serif text-5xl font-light text-terracotta/40 mb-6 block group-hover:text-terracotta transition-colors duration-300">03</span>
-            <h3 class="font-serif text-xl md:text-2xl font-medium text-charcoal mb-4">
-              Mentorías de Oratoria
-            </h3>
-            <p class="text-warm-gray text-sm leading-relaxed mb-6 flex-grow">
-              Acompañamiento personalizado 1:1 para emprendedores y creadores. Pierde el miedo a la cámara, domina tu discurso y conecta auténticamente con tu audiencia.
-            </p>
-            <ul class="text-xs text-warm-gray flex flex-col gap-2 mb-8 border-t border-soft-sand/60 pt-4">
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Expresión corporal & dominio de voz
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Estructura del pitch & comunicación
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="h-1.5 w-1.5 rounded-full bg-sage"></span> Estrategias para monetizar contenido
-              </li>
-            </ul>
-            <a 
-              href="#contacto" 
-              class="inline-block text-center rounded-full border border-warm-gray/40 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-charcoal hover:bg-charcoal hover:text-bone hover:border-charcoal transition-all duration-300"
-            >
-              Reservar mentoría
-            </a>
-          </div>
-
+          <a 
+            href="#contacto" 
+            class="inline-block rounded-full bg-[#5B4670] text-[#F3EDFA] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-[#3D2D4E] hover:scale-105 transition-all duration-300 shadow-md"
+          >
+            reservar plaza 1:1
+          </a>
         </div>
+
+        <!-- ROW 1 - BLOCK B (IMAGE 1): sobre_mi_1.jpg -->
+        <div class="relative min-h-[380px] md:min-h-[480px] lg:min-h-[560px] overflow-hidden group">
+          <Image 
+            src={sobreMi1} 
+            alt="Des - Mentora de Oratoria" 
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            width={800}
+            height={900}
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- ROW 2 - BLOCK C (IMAGE 2): sobre_mi_2.jpg -->
+        <div class="relative min-h-[380px] md:min-h-[480px] lg:min-h-[560px] overflow-hidden group order-2 md:order-1">
+          <Image 
+            src={sobreMi2} 
+            alt="Des - Creadora de Contenido UGC" 
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            width={800}
+            height={900}
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- ROW 2 - BLOCK D (TEXT): Creación de Contenido UGC -->
+        <div class="bg-[#0066FF] text-[#FFFFFF] p-10 md:p-16 lg:p-20 flex flex-col justify-between items-start gap-8 min-h-[480px] lg:min-h-[560px] order-1 md:order-2">
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-[#CBE0FF]">
+              CONTENIDO 9:16 ENFOCADO A CONVERSIÓN
+            </span>
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#FFFFFF]">
+              CREACIÓN DE CONTENIDO UGC
+            </h2>
+            <p class="text-sm md:text-base font-normal leading-relaxed text-[#E6F0FF] max-w-md mt-2">
+              Vídeos orgánicos y anuncios de alto impacto con ganchos de retención pensados para marcas de belleza, moda y lifestyle.
+            </p>
+          </div>
+          
+          <a 
+            href="#portafolio" 
+            class="inline-block rounded-full bg-[#B8FF44] text-[#0047B3] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-[#A3F024] hover:scale-105 transition-all duration-300 shadow-md"
+          >
+            solicitar paquete UGC
+          </a>
+        </div>
+
+        <!-- ROW 3 - BLOCK E (TEXT): Social Media Management -->
+        <div class="bg-[#2B2D2F] text-[#FAF8F5] p-10 md:p-16 lg:p-20 flex flex-col justify-between items-start gap-8 min-h-[480px] lg:min-h-[560px] order-3">
+          <div class="flex flex-col gap-4">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-terracotta">
+              MARCAS E-COMMERCE & ESTRATEGIA
+            </span>
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#FAF8F5]">
+              SOCIAL MEDIA MANAGEMENT
+            </h2>
+            <p class="text-sm md:text-base font-normal leading-relaxed text-soft-sand/80 max-w-md mt-2">
+              Estrategia integral de comunicación digital, auditoría de canales y dirección creativa respaldada por Licenciatura en Comunicación.
+            </p>
+          </div>
+          
+          <a 
+            href="#contacto" 
+            class="inline-block rounded-full bg-terracotta text-[#FAF8F5] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-terracotta/90 hover:scale-105 transition-all duration-300 shadow-md"
+          >
+            consultar servicio SMM
+          </a>
+        </div>
+
+        <!-- ROW 3 - BLOCK F (IMAGE 3): sobre_mi_3.jpg -->
+        <div class="relative min-h-[380px] md:min-h-[480px] lg:min-h-[560px] overflow-hidden group order-4">
+          <Image 
+            src={sobreMi3} 
+            alt="Des - Social Media Manager" 
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 ease-out"
+            width={800}
+            height={900}
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent"></div>
+        </div>
+
       </div>
     </section>
 
