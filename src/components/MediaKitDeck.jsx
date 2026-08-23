@@ -208,7 +208,7 @@ export default function MediaKitDeck() {
         {currentSlide === 5 - 1 && (
           <div className="w-full flex flex-col items-center gap-6 text-center animate-fade-in">
             <span className="bg-sage/10 text-sage text-[10px] font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full">
-              Trabajemos Juntas
+              Trabajemos Juntos
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-medium tracking-tight text-charcoal max-w-lg">
               ¿Lista para potenciar la comunicación de tu marca?
