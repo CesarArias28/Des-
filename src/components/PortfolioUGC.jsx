@@ -159,17 +159,17 @@ export default function PortfolioUGC() {
   return (
     <div className="flex flex-col gap-8 relative">
       
-      {/* Top Header Controls: Filter Buttons + Carousel Arrows */}
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-soft-sand/30 pb-4">
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-2.5">
+      {/* Top Header Controls: Centered Filter Buttons + Positioned Carousel Arrows */}
+      <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 border-b border-soft-sand/30 pb-4 w-full">
+        {/* Filter Buttons - Centered */}
+        <div className="flex flex-wrap justify-center items-center gap-2.5 w-full">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
-              className={`px-5 py-2 rounded-full text-[11px] font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
+              className={`px-6 py-2.5 rounded-full text-[11px] font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                 activeFilter === cat
-                  ? 'bg-sage text-[#FAF8F5] shadow-md shadow-sage/10'
+                  ? 'bg-sage text-[#FAF8F5] shadow-md shadow-sage/20 scale-105'
                   : 'text-warm-gray border border-soft-sand/85 hover:text-charcoal hover:border-charcoal hover:bg-soft-sand/20'
               }`}
             >
@@ -179,7 +179,7 @@ export default function PortfolioUGC() {
         </div>
 
         {/* Glassmorphism Navigation Arrows */}
-        <div className="flex items-center gap-2">
+        <div className="md:absolute md:right-0 flex items-center gap-2 shrink-0">
           <button
             onClick={() => scrollCarousel('left')}
             className="h-10 w-10 rounded-full border border-soft-sand/80 bg-[#FAF8F5]/80 backdrop-blur-md text-charcoal hover:bg-sage hover:text-[#FAF8F5] hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-sm"
