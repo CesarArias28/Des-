@@ -178,44 +178,19 @@ export default function PortfolioUGC() {
         </div>
       </div>
 
-      {/* Horizontal Carousel Track with Side Navigation Arrows (Identical to TestimonialCarousel) */}
-      <div className="relative group/nav">
-        
-        {/* Left Arrow Button */}
-        <button
-          onClick={() => scrollCarousel('left')}
-          className="absolute left-0 sm:-left-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-sage hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
-          aria-label="Anterior"
-        >
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        {/* Right Arrow Button */}
-        <button
-          onClick={() => scrollCarousel('right')}
-          className="absolute right-0 sm:-right-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-sage hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
-          aria-label="Siguiente"
-        >
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-
-        <div 
-          ref={carouselRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-3 px-1 scroll-smooth"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {filteredItems.map((item) => (
-            <UgcCard
-              key={item.id}
-              item={item}
-              onSelect={setActiveVideo}
-            />
-          ))}
-        </div>
+      {/* Horizontal Carousel Track - Clean Swipeable Navigation (No Buttons) */}
+      <div 
+        ref={carouselRef}
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-3 px-1 scroll-smooth cursor-grab active:cursor-grabbing"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+      >
+        {filteredItems.map((item) => (
+          <UgcCard
+            key={item.id}
+            item={item}
+            onSelect={setActiveVideo}
+          />
+        ))}
       </div>
 
       {/* Video Modal */}
