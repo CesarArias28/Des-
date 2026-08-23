@@ -159,10 +159,9 @@ export default function PortfolioUGC() {
   return (
     <div className="flex flex-col gap-8 relative">
       
-      {/* Top Header Controls: Centered Filter Buttons + Positioned Carousel Arrows */}
-      <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 border-b border-soft-sand/30 pb-4 w-full">
-        {/* Filter Buttons - Centered */}
-        <div className="flex flex-wrap justify-center items-center gap-2.5 w-full">
+      {/* Top Header Controls: Centered Filter Buttons */}
+      <div className="flex justify-center items-center border-b border-soft-sand/30 pb-4 w-full">
+        <div className="flex flex-wrap justify-center items-center gap-2.5">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -177,43 +176,46 @@ export default function PortfolioUGC() {
             </button>
           ))}
         </div>
-
-        {/* Glassmorphism Navigation Arrows */}
-        <div className="md:absolute md:right-0 flex items-center gap-2 shrink-0">
-          <button
-            onClick={() => scrollCarousel('left')}
-            className="h-10 w-10 rounded-full border border-soft-sand/80 bg-[#FAF8F5]/80 backdrop-blur-md text-charcoal hover:bg-sage hover:text-[#FAF8F5] hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-sm"
-            aria-label="Anterior"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={() => scrollCarousel('right')}
-            className="h-10 w-10 rounded-full border border-soft-sand/80 bg-[#FAF8F5]/80 backdrop-blur-md text-charcoal hover:bg-sage hover:text-[#FAF8F5] hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-sm"
-            aria-label="Siguiente"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
       </div>
 
-      {/* Horizontal Carousel Track */}
-      <div 
-        ref={carouselRef}
-        className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-3 px-1 scroll-smooth"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-      >
-        {filteredItems.map((item) => (
-          <UgcCard
-            key={item.id}
-            item={item}
-            onSelect={setActiveVideo}
-          />
-        ))}
+      {/* Horizontal Carousel Track with Side Navigation Arrows (Identical to TestimonialCarousel) */}
+      <div className="relative group/nav">
+        
+        {/* Left Arrow Button */}
+        <button
+          onClick={() => scrollCarousel('left')}
+          className="absolute left-0 sm:-left-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-sage hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
+          aria-label="Anterior"
+        >
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        {/* Right Arrow Button */}
+        <button
+          onClick={() => scrollCarousel('right')}
+          className="absolute right-0 sm:-right-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-sage hover:border-sage transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
+          aria-label="Siguiente"
+        >
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <div 
+          ref={carouselRef}
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none py-3 px-1 scroll-smooth"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {filteredItems.map((item) => (
+            <UgcCard
+              key={item.id}
+              item={item}
+              onSelect={setActiveVideo}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Video Modal */}
