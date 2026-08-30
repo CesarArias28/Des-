@@ -139,32 +139,35 @@ import bento4 from '../assets/bento_4.jpg';
       <!-- Main Grid Wrapper Element -->
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-0">
 
-        <!-- ROW 1 - BLOCK A (TEXTO ARENA CLARO): Mentorías de Oratoria -->
-        <div class="w-full h-[398px] relative bg-[#EFECE6] text-[#24201D] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start">
+        <!-- ROW 1 - BLOCK A (TEXTO ARENA CLARO): Mentorías 1:1 - HAZTE ESCUCHAR -->
+        <div class="w-full min-h-[398px] lg:h-[460px] relative bg-[#EFECE6] text-[#24201D] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start overflow-y-auto">
           <div class="flex flex-col gap-2.5">
             <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#7A746E]">
-              PROGRAMA 1:1 • PERSONALIZADO
+              MENTORÍA 1:1 · PERSONALIZADA
             </span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.02] text-[#24201D]">
-              MENTORÍA DE ORATORIA
+              HAZTE ESCUCHAR
             </h2>
             <div class="h-[1px] w-12 bg-[#24201D]/20 my-1"></div>
             <p class="text-xs sm:text-sm font-normal leading-relaxed text-[#524D47] max-w-xl">
-              Pierde el miedo a la cámara, domina tu voz y construye una comunidad leal para monetizar tu presencia digital con autenticidad.
+              Comunicación, marca personal, contenido y estrategia para encontrar tu voz, perder el miedo a mostrarte y construir una presencia digital que realmente te represente.
+            </p>
+            <p class="text-xs font-normal leading-relaxed text-[#524D47]/90 max-w-xl hidden sm:block">
+              Trabajaremos comunicación, marca personal, estrategia de redes, creación de contenido, UGC, edición de vídeos, storytelling, oratoria y desenvolvimiento frente a cámara, adaptándonos a lo que realmente necesitas potenciar.
             </p>
           </div>
           
           <a 
             href="#contacto" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#24201D] text-[#FAF8F5] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#383330] hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-flex items-center gap-2 rounded-full bg-[#24201D] text-[#FAF8F5] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#383330] hover:scale-105 transition-all duration-300 shadow-md mt-4"
           >
-            <span>reservar plaza 1:1</span>
+            <span>QUIERO EMPEZAR</span>
             <span>&rarr;</span>
           </a>
         </div>
 
         <!-- ROW 1 - BLOCK B (IMAGEN 1): bento_1.jpg -->
-        <div class="w-full h-[398px] relative overflow-hidden group">
+        <div class="w-full min-h-[398px] lg:h-[460px] relative overflow-hidden group">
           <Image 
             src={bento1} 
             alt="Des - Mentora de Oratoria" 
@@ -175,7 +178,7 @@ import bento4 from '../assets/bento_4.jpg';
         </div>
 
         <!-- ROW 2 - BLOCK C (IMAGEN 2): bento_2.jpg -->
-        <div class="w-full h-[398px] relative overflow-hidden group order-2 md:order-1">
+        <div class="w-full min-h-[398px] lg:h-[460px] relative overflow-hidden group order-2 md:order-1">
           <Image 
             src={bento2} 
             alt="Des - Creadora de Contenido UGC" 
@@ -185,56 +188,68 @@ import bento4 from '../assets/bento_4.jpg';
           />
         </div>
 
-        <!-- ROW 2 - BLOCK D (TEXTO ESPRESSO OSCURO): Creación de Contenido UGC -->
-        <div class="w-full h-[398px] relative bg-[#24201D] text-[#FAF8F5] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start gap-2.5 order-1 md:order-2">
+        <!-- ROW 2 - BLOCK D (TEXTO ESPRESSO OSCURO): Creación de Contenido UGC - CONTENIDO QUE CONECTA -->
+        <div class="w-full min-h-[398px] lg:h-[460px] relative bg-[#24201D] text-[#FAF8F5] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start gap-2.5 order-1 md:order-2 overflow-y-auto">
           <div class="flex flex-col gap-2.5">
             <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#CDB396]">
-              CONTENIDO 9:16 ENFOCADO A CONVERSIÓN
+              CREACIÓN DE CONTENIDO · UGC
             </span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.02] text-[#FAF8F5]">
-              CREACIÓN DE CONTENIDO UGC
+              CONTENIDO QUE CONECTA
             </h2>
             <div class="h-[1px] w-12 bg-white/20 my-1"></div>
-            <p class="text-xs sm:text-sm font-normal leading-relaxed text-[#FAF8F5]/80 max-w-xl">
-              Vídeos orgánicos y anuncios de alto impacto con ganchos de retención pensados para marcas de belleza, moda y lifestyle.
+            <p class="text-xs sm:text-sm font-normal leading-relaxed text-[#FAF8F5]/90 max-w-xl">
+              Creo contenido para marcas que quieren verse naturales, actuales y, sobre todo, conectar con personas reales.
+            </p>
+            <p class="text-xs font-normal leading-relaxed text-[#FAF8F5]/80 max-w-xl hidden sm:block">
+              Desde la idea inicial hasta el resultado final, me encargo de conceptualizar, crear guiones, grabar y editar contenido UGC adaptado a la personalidad, objetivos y público de cada marca.
+            </p>
+            <p class="text-xs font-normal leading-relaxed text-[#FAF8F5]/75 max-w-xl hidden lg:block">
+              Reviews, storytelling, demostraciones de producto, contenido lifestyle, voice-over, tendencias, unboxings y piezas pensadas tanto para redes sociales como para campañas publicitarias.
             </p>
           </div>
           
           <a 
             href="#portafolio" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#FAF8F5] text-[#24201D] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#EFECE6] hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-flex items-center gap-2 rounded-full bg-[#FAF8F5] text-[#24201D] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#EFECE6] hover:scale-105 transition-all duration-300 shadow-md mt-4"
           >
-            <span>solicitar paquete UGC</span>
+            <span>QUIERO CREAR CONTIGO</span>
             <span>&rarr;</span>
           </a>
         </div>
 
-        <!-- ROW 3 - BLOCK E (TEXTO GREIGE CÁLIDO): Social Media Management -->
-        <div class="w-full h-[398px] relative bg-[#E3DDD3] text-[#24201D] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start gap-2.5 order-3">
+        <!-- ROW 3 - BLOCK E (TEXTO GREIGE CÁLIDO): Social Media Management - HAGAMOS QUE TU MARCA HABLE -->
+        <div class="w-full min-h-[398px] lg:h-[460px] relative bg-[#E3DDD3] text-[#24201D] p-6 sm:p-8 lg:p-10 flex flex-col justify-between items-start gap-2.5 order-3 overflow-y-auto">
           <div class="flex flex-col gap-2.5">
             <span class="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#7A746E]">
-              MARCAS E-COMMERCE & ESTRATEGIA
+              SOCIAL MEDIA MANAGEMENT · ESTRATEGIA & CONTENIDO
             </span>
             <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.02] text-[#24201D]">
-              SOCIAL MEDIA MANAGEMENT
+              HAGAMOS QUE TU MARCA HABLE
             </h2>
             <div class="h-[1px] w-12 bg-[#24201D]/20 my-1"></div>
             <p class="text-xs sm:text-sm font-normal leading-relaxed text-[#524D47] max-w-xl">
-              Estrategia integral de comunicación digital, auditoría de canales y dirección creativa respaldada por Licenciatura en Comunicación.
+              No se trata solo de publicar. Se trata de entender qué quiere decir tu marca, cómo quiere hacerlo y a quién queremos llegar.
+            </p>
+            <p class="text-xs font-normal leading-relaxed text-[#524D47]/90 max-w-xl hidden sm:block">
+              Me encargo de construir y gestionar la presencia digital de tu marca desde una visión estratégica y creativa: estrategia de contenido, planificación, creación de ideas, guiones, grabación y edición de vídeos, diseño de contenido, tendencias, storytelling y gestión de redes sociales.
+            </p>
+            <p class="text-xs font-normal leading-relaxed text-[#524D47]/80 max-w-xl hidden lg:block">
+              Creamos una comunicación que tenga sentido para tu negocio, mantenga una identidad reconocible y consiga que detrás de cada publicación haya una intención.
             </p>
           </div>
           
           <a 
             href="#contacto" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#24201D] text-[#FAF8F5] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#383330] hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-flex items-center gap-2 rounded-full bg-[#24201D] text-[#FAF8F5] px-7 py-3 text-xs font-medium uppercase tracking-wider hover:bg-[#383330] hover:scale-105 transition-all duration-300 shadow-md mt-4"
           >
-            <span>consultar servicio SMM</span>
+            <span>QUIERO HACER CRECER MI MARCA</span>
             <span>&rarr;</span>
           </a>
         </div>
 
         <!-- ROW 3 - BLOCK F (IMAGEN 3): bento_3.jpg -->
-        <div class="w-full h-[398px] relative overflow-hidden group order-4">
+        <div class="w-full min-h-[398px] lg:h-[460px] relative overflow-hidden group order-4">
           <Image 
             src={bento3} 
             alt="Des - Social Media Manager" 

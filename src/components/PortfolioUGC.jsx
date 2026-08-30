@@ -1,69 +1,160 @@
 import React, { useState, useRef } from 'react';
 
 const portfolioItems = [
+  // SOCIAL MEDIA (4 Slots)
   {
     id: 1,
-    title: 'CREA Espacio Creativo',
-    category: 'Lifestyle',
-    metric: 'Estética SMM',
+    title: 'Estrategia & Planificación',
+    category: 'Social Media',
+    metric: 'SMM Estratégico',
     videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/10',
-    description: 'Vídeo estético mostrando la ubicación de CREA en Sant Just Desvern, Barcelona.'
+    posterUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
+    description: 'Construcción de presencia digital y planificación estratégica de contenidos.'
   },
   {
     id: 2,
-    title: 'CREA Proyecto y Equipo',
-    category: 'Lifestyle',
-    metric: 'Detrás de Cámaras',
+    title: 'Gestión de Comunidad',
+    category: 'Social Media',
+    metric: 'Engagement & Conexión',
     videoUrl: '/reels/crea_team.mp4',
     posterUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#C48B71]/15',
-    description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
+    description: 'Interacción auténtica y dinamización de comunidad para marcas e-commerce.'
   },
   {
     id: 3,
-    title: 'Moka Ritual Coffee',
-    category: 'Lifestyle',
-    metric: '+18% CTR en Ads',
+    title: 'Dirección Creativa',
+    category: 'Social Media',
+    metric: 'Identidad Visual',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#F1ECE4] via-[#FAF8F5] to-[#7A8471]/5',
-    description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
+    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
+    description: 'Conceptualización visual y diseño de piezas clave para redes sociales.'
   },
   {
     id: 4,
-    title: 'Bloom Lip Oil',
-    category: 'Beauty',
-    metric: 'Orgánico Viral',
+    title: 'Auditoría Digital',
+    category: 'Social Media',
+    metric: 'Optimización 360°',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/15',
-    description: 'ASMR unboxing y prueba de tonos con voz en off de oratoria persuasiva.'
+    posterUrl: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80',
+    description: 'Análisis detallado de canales y recomendaciones tácticas de crecimiento.'
   },
+
+  // UGC (4 Slots)
   {
     id: 5,
-    title: 'Aura Fine Jewelry',
-    category: 'Fashion',
-    metric: '+42% Engagement',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#F1ECE4] via-[#FAF8F5] to-[#C48B71]/10',
-    description: 'Macro tomas estéticas mostrando los detalles de piezas de plata reciclada.'
+    title: 'CREA Espacio Creativo',
+    category: 'UGC',
+    metric: 'Contenido 9:16',
+    videoUrl: '/reels/crea_location.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
+    description: 'Vídeo estético mostrando la ubicación de CREA en Sant Just Desvern.'
   },
   {
     id: 6,
-    title: 'Zen Mat Yoga',
-    category: 'Lifestyle',
-    metric: '85K Reproducciones',
+    title: 'CREA Proyecto & Equipo',
+    category: 'UGC',
+    metric: 'Detrás de Cámaras',
+    videoUrl: '/reels/crea_team.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
+    description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
+  },
+  {
+    id: 7,
+    title: 'Moka Ritual Coffee',
+    category: 'UGC',
+    metric: 'Lifestyle & Unboxing',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80',
+    description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
+  },
+  {
+    id: 8,
+    title: 'Bloom Lip Oil',
+    category: 'UGC',
+    metric: 'Orgánico Viral',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80',
+    description: 'ASMR unboxing y prueba de tonos con voz en off de oratoria persuasiva.'
+  },
+
+  // MENTORÍAS (4 Slots)
+  {
+    id: 9,
+    title: 'Oratoria & Cámara',
+    category: 'Mentorías',
+    metric: 'Programa 1:1',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+    description: 'Desenvolvimiento frente a cámara y técnicas de modulación de voz.'
+  },
+  {
+    id: 10,
+    title: 'Marca Personal',
+    category: 'Mentorías',
+    metric: 'Posicionamiento',
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80',
-    bgClass: 'from-[#FAF8F5] via-[#F1ECE4] to-[#7A8471]/20',
-    description: 'Contenido lifestyle estético integrando el uso de tapete antideslizante.'
+    posterUrl: 'https://images.unsplash.com/photo-1580894732413-a70493407422?auto=format&fit=crop&w=600&q=80',
+    description: 'Construcción de propuesta de valor y comunicación con propósito.'
+  },
+  {
+    id: 11,
+    title: 'Estrategia de Voz',
+    category: 'Mentorías',
+    metric: 'Storytelling 1:1',
+    videoUrl: '/reels/crea_location.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    description: 'Definición de pilares narrativos para conectar con tu audiencia.'
+  },
+  {
+    id: 12,
+    title: 'Desarrollo de Mensaje',
+    category: 'Mentorías',
+    metric: 'Confianza Digital',
+    videoUrl: '/reels/crea_team.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80',
+    description: 'Superación de bloqueos creativos y seguridad para comunicar lo que haces.'
+  },
+
+  // EVENTOS (4 Slots)
+  {
+    id: 13,
+    title: 'Cobertura en Vivo',
+    category: 'Eventos',
+    metric: 'Live Streaming',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80',
+    description: 'Creación de contenido dinámico en tiempo real para eventos de marca.'
+  },
+  {
+    id: 14,
+    title: 'Talleres & Workshops',
+    category: 'Eventos',
+    metric: 'Formación Presencial',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80',
+    description: 'Sesiones grupales de oratoria y estrategias de comunicación práctica.'
+  },
+  {
+    id: 15,
+    title: 'Lanzamiento de Marca',
+    category: 'Eventos',
+    metric: 'Experiencia Inmersiva',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80',
+    description: 'Documentación estética y contenido UGC durante lanzamientos VIP.'
+  },
+  {
+    id: 16,
+    title: 'Networking & Experiencia',
+    category: 'Eventos',
+    metric: 'Comunidad Real',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=600&q=80',
+    description: 'Entrevistas cortas y cápsulas en vídeo con asistentes y ponentes.'
   }
 ];
 
-const categories = ['Todos', 'Beauty', 'Lifestyle', 'Fashion'];
+const categories = ['Todos', 'Social Media', 'UGC', 'Mentorías', 'Eventos'];
 
 // Individual Card Component to handle play-on-hover logic with refs
 const UgcCard = ({ item, onSelect }) => {
