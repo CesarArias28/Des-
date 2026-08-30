@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import logoDes from '../assets/logo_des.png';
 ---
 
 <footer class="bg-soft-sand/40 border-t border-soft-sand/80 py-16 px-6 md:px-12 text-charcoal" id="contacto">
@@ -9,11 +11,18 @@
       
       <!-- Brand column -->
       <div class="md:col-span-5 flex flex-col gap-4">
-        <a href="#" class="font-serif text-3xl font-semibold tracking-wide text-charcoal">
-          Des<span class="text-terracotta">.</span>
+        <a href="#" class="inline-block transition-transform duration-300 hover:scale-105">
+          <Image 
+            src={logoDes} 
+            alt="Des Logo" 
+            class="h-10 w-auto object-contain" 
+            width={300}
+            height={150}
+          />
         </a>
-        <p class="text-warm-gray text-sm leading-relaxed max-w-sm">
-          Licenciada en Comunicación Social, creadora de contenido UGC, Social Media Manager y mentora de oratoria. Conectando marcas conscientes y creadores con su audiencia real a través de estrategias con propósito.
+        <p class="text-warm-gray text-sm leading-relaxed max-w-md">
+          Comunicación, creatividad y estrategia. Trabajo con marcas, creo contenido, comparto lo que sé y ayudo a otras personas a encontrar su propia forma de comunicar.<br class="hidden sm:block" />
+          Porque al final, todo lo que hago empieza en el mismo lugar: una buena historia y una forma auténtica de contarla.
         </p>
         
         <!-- Socials -->

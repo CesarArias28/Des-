@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import logoDes from '../assets/logo_des.png';
+
 interface Props {
   isTransparent?: boolean;
 }
@@ -16,9 +19,15 @@ const { isTransparent = false } = Astro.props;
   data-transparent={isTransparent ? "true" : "false"}
 >
   <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12 transition-all duration-500" id="navbar-container">
-    <!-- Logo -->
-    <a href="#" class="group font-serif text-2xl font-semibold tracking-wide flex items-center gap-1 transition-colors duration-500" id="navbar-logo">
-      Des<span class="text-terracotta group-hover:translate-x-0.5 transition-transform duration-300">.</span>
+    <!-- Logo Image -->
+    <a href="#" class="group flex items-center transition-transform duration-300 hover:scale-105" id="navbar-logo">
+      <Image 
+        src={logoDes} 
+        alt="Des Logo" 
+        class="h-7 md:h-9 w-auto object-contain transition-all duration-500" 
+        width={240}
+        height={120}
+      />
     </a>
 
     <!-- Desktop Navigation Links -->
