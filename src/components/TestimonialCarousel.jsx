@@ -140,15 +140,24 @@ export default function TestimonialCarousel() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4">
-          <span class="text-xs font-semibold tracking-[0.25em] uppercase text-terracotta">
-            Testimonios & Mentorías 1:1
+          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#CDB396]">
+            TESTIMONIOS & MENTORÍAS 1:1
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF8F5] leading-tight uppercase">
-            Enfócate en tu mensaje y finalmente <br />
-            <span class="italic text-soft-sand lowercase font-serif">empieza aquello que tanto te llama</span>
+          
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#FAF8F5] leading-[1.08] uppercase">
+            TODO ESTO EMPEZÓ <br />
+            CON UNA <span className="text-[#CDB396]">IDEA</span>
           </h2>
-          <p className="text-soft-sand/80 text-sm sm:text-base leading-relaxed max-w-xl mx-auto font-light">
-            Experiencias reales de creadores, emprendedores y marcas que han transformado su presencia digital y oratoria ante la cámara.
+
+          {/* Star Sparkle Divider Motif */}
+          <div className="flex items-center justify-center gap-3 my-1">
+            <div className="h-[1px] w-12 bg-[#CDB396]/40"></div>
+            <span className="text-[#CDB396] text-xs">✦</span>
+            <div className="h-[1px] w-12 bg-[#CDB396]/40"></div>
+          </div>
+
+          <p className="text-soft-sand/85 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-light">
+            Personas, creadores y marcas que confiaron en mí para <strong className="font-semibold text-[#CDB396]">comunicar</strong> mejor, <strong className="font-semibold text-[#CDB396]">crear</strong> contenido y <strong className="font-semibold text-[#CDB396]">potenciar</strong> su presencia digital.
           </p>
         </div>
 
