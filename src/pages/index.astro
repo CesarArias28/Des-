@@ -133,38 +133,36 @@ import bento4 from '../assets/bento_4.jpg';
       </div>
     </section>
 
-    <!-- Los 3 Pilares Section - Bento Grid Rediseñado Fiel a la Referencia -->
-    <section class="bg-bone py-12 sm:py-16 lg:py-20 px-3 sm:px-6 lg:px-8 border-t border-soft-sand/30" id="servicios">
+    <!-- Los 3 Pilares Section - Bento Grid Full-Bleed 100% Fiel a Dani G. Schulz -->
+    <section class="bg-bone py-0 px-0 border-t border-soft-sand/30 overflow-hidden" id="servicios">
       
-      <!-- Grid de 6 Bloques (3 Filas x 2 Columnas) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 lg:gap-6 w-full max-w-none">
+      <!-- Grid 100% Ancho Completo sin Espaciado (gap-0) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 w-full max-w-none">
 
-        <!-- ROW 1 - CARD 1 (TEXTO CLARO): Mentoría de Oratoria -->
-        <div class="bg-[#EFECE6] text-[#242220] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 1 - BLOCK A (TEXTO LILA): Mentorías de Oratoria -->
+        <div class="bg-[#D6CBE4] text-[#2C243B] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start h-[500px] sm:h-[580px] lg:h-[640px]">
           <div class="flex flex-col gap-4">
-            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-[#7A746E]">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-[#5B4670]">
               PROGRAMA 1:1 • PERSONALIZADO
             </span>
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.05] text-[#242220]">
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#241A33]">
               MENTORÍA DE ORATORIA
             </h2>
-            <div class="h-[1px] w-12 bg-[#242220]/20 my-1"></div>
-            <p class="text-sm sm:text-base font-normal leading-relaxed text-[#524D47] max-w-xl">
+            <p class="text-sm sm:text-base font-normal leading-relaxed text-[#3D324F] max-w-xl mt-2">
               Pierde el miedo a la cámara, domina tu voz y construye una comunidad leal para monetizar tu presencia digital con autenticidad.
             </p>
           </div>
           
           <a 
             href="#contacto" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#242220] text-[#FAF8F5] px-7 py-3.5 text-xs font-medium uppercase tracking-wider hover:bg-[#3B3835] hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-block rounded-full bg-[#5B4670] text-[#F3EDFA] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-[#3D2D4E] hover:scale-105 transition-all duration-300 shadow-md"
           >
-            <span>reservar plaza 1:1</span>
-            <span>&rarr;</span>
+            reservar plaza 1:1
           </a>
         </div>
 
-        <!-- ROW 1 - CARD 2 (IMAGEN 1): bento_1.jpg -->
-        <div class="relative min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 1 - BLOCK B (IMAGEN 1): bento_1.jpg -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] overflow-hidden group">
           <Image 
             src={bento1} 
             alt="Des - Mentora de Oratoria" 
@@ -174,8 +172,8 @@ import bento4 from '../assets/bento_4.jpg';
           />
         </div>
 
-        <!-- ROW 2 - CARD 3 (IMAGEN 2): bento_2.jpg -->
-        <div class="relative min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] overflow-hidden group order-2 md:order-1 shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 2 - BLOCK C (IMAGEN 2): bento_2.jpg -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] overflow-hidden group order-2 md:order-1">
           <Image 
             src={bento2} 
             alt="Des - Creadora de Contenido UGC" 
@@ -185,56 +183,52 @@ import bento4 from '../assets/bento_4.jpg';
           />
         </div>
 
-        <!-- ROW 2 - CARD 4 (TEXTO OSCURO): Creación de Contenido UGC -->
-        <div class="bg-[#242220] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] order-1 md:order-2 shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 2 - BLOCK D (TEXTO AZUL ELÉCTRICO / VERDE): Creación de Contenido UGC -->
+        <div class="bg-[#0055FF] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[500px] sm:h-[580px] lg:h-[640px] order-1 md:order-2">
           <div class="flex flex-col gap-4">
-            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-[#CDB396]">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-[#B8FF44]">
               CONTENIDO 9:16 ENFOCADO A CONVERSIÓN
             </span>
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.05] text-[#FAF8F5]">
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#B8FF44]">
               CREACIÓN DE CONTENIDO UGC
             </h2>
-            <div class="h-[1px] w-12 bg-white/20 my-1"></div>
-            <p class="text-sm sm:text-base font-normal leading-relaxed text-[#FAF8F5]/80 max-w-xl">
+            <p class="text-sm sm:text-base font-normal leading-relaxed text-white/90 max-w-xl mt-2">
               Vídeos orgánicos y anuncios de alto impacto con ganchos de retención pensados para marcas de belleza, moda y lifestyle.
             </p>
           </div>
           
           <a 
             href="#portafolio" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#EFECE6] text-[#242220] px-7 py-3.5 text-xs font-medium uppercase tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-block rounded-full bg-[#B8FF44] text-[#003366] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-[#A3F024] hover:scale-105 transition-all duration-300 shadow-md"
           >
-            <span>solicitar paquete UGC</span>
-            <span>&rarr;</span>
+            solicitar paquete UGC
           </a>
         </div>
 
-        <!-- ROW 3 - CARD 5 (TEXTO CLARO): Social Media Management -->
-        <div class="bg-[#EFECE6] text-[#242220] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] order-3 shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 3 - BLOCK E (TEXTO CARBÓN OSCURO): Social Media Management -->
+        <div class="bg-[#2B2D2F] text-[#FAF8F5] p-8 sm:p-12 lg:p-16 flex flex-col justify-between items-start gap-4 h-[500px] sm:h-[580px] lg:h-[640px] order-3">
           <div class="flex flex-col gap-4">
-            <span class="text-xs font-semibold uppercase tracking-[0.25em] text-[#7A746E]">
+            <span class="text-xs font-black uppercase tracking-[0.25em] text-[#CDB396]">
               MARCAS E-COMMERCE & ESTRATEGIA
             </span>
-            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium uppercase tracking-tight leading-[1.05] text-[#242220]">
+            <h2 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] text-[#FAF8F5]">
               SOCIAL MEDIA MANAGEMENT
             </h2>
-            <div class="h-[1px] w-12 bg-[#242220]/20 my-1"></div>
-            <p class="text-sm sm:text-base font-normal leading-relaxed text-[#524D47] max-w-xl">
+            <p class="text-sm sm:text-base font-normal leading-relaxed text-soft-sand/80 max-w-xl mt-2">
               Estrategia integral de comunicación digital, auditoría de canales y dirección creativa respaldada por Licenciatura en Comunicación.
             </p>
           </div>
           
           <a 
             href="#contacto" 
-            class="inline-flex items-center gap-2 rounded-full bg-[#242220] text-[#FAF8F5] px-7 py-3.5 text-xs font-medium uppercase tracking-wider hover:bg-[#3B3835] hover:scale-105 transition-all duration-300 shadow-md"
+            class="inline-block rounded-full bg-terracotta text-[#FAF8F5] px-8 py-3.5 text-xs md:text-sm font-serif italic font-bold hover:bg-terracotta/90 hover:scale-105 transition-all duration-300 shadow-md"
           >
-            <span>consultar servicio SMM</span>
-            <span>&rarr;</span>
+            consultar servicio SMM
           </a>
         </div>
 
-        <!-- ROW 3 - CARD 6 (IMAGEN 3): bento_3.jpg -->
-        <div class="relative min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] rounded-[24px] sm:rounded-[32px] overflow-hidden group order-4 shadow-sm hover:shadow-xl transition-all duration-500">
+        <!-- ROW 3 - BLOCK F (IMAGEN 3): bento_3.jpg -->
+        <div class="relative h-[500px] sm:h-[580px] lg:h-[640px] overflow-hidden group order-4">
           <Image 
             src={bento3} 
             alt="Des - Social Media Manager" 
