@@ -74,8 +74,21 @@ import bento4 from '../assets/bento_4.jpg';
       <div class="mx-auto max-w-[1600px] w-full">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          <!-- Text left -->
-          <div class="lg:col-span-7 flex flex-col gap-6 text-warm-gray text-base lg:text-lg leading-relaxed">
+          <!-- Editorial Image left: Bio_actualizada -->
+          <div class="lg:col-span-5 relative flex justify-center order-2 lg:order-1">
+            <div class="relative w-full max-w-lg rounded-[28px] overflow-hidden shadow-2xl group">
+              <Image 
+                src={bioActualizada} 
+                alt="Des - Licenciada en Comunicación Social" 
+                class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                width={1200}
+                height={1600}
+              />
+            </div>
+          </div>
+
+          <!-- Text right -->
+          <div class="lg:col-span-7 flex flex-col gap-6 text-warm-gray text-base lg:text-lg leading-relaxed order-1 lg:order-2">
             <span class="text-xs font-semibold tracking-[0.25em] uppercase text-warm-gray">Sobre Mí</span>
             
             <p class="text-charcoal font-serif text-xl sm:text-2xl italic leading-snug border-l-2 border-[#CDB396] pl-4 py-1 text-left my-2">
@@ -113,19 +126,6 @@ import bento4 from '../assets/bento_4.jpg';
                   <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </a>
-            </div>
-          </div>
-
-          <!-- Editorial Image right: Bio_actualizada -->
-          <div class="lg:col-span-5 relative flex justify-center">
-            <div class="relative w-full max-w-lg rounded-[28px] overflow-hidden shadow-2xl group">
-              <Image 
-                src={bioActualizada} 
-                alt="Des - Licenciada en Comunicación Social" 
-                class="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
-                width={1200}
-                height={1600}
-              />
             </div>
           </div>
 
