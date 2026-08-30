@@ -218,7 +218,7 @@ const { isTransparent = false } = Astro.props;
     navbarContainer?.classList.remove('py-2');
     navbarContainer?.classList.add('py-4');
     
-    if (navbarLogo) navbarLogo.className = "group font-serif text-2xl font-semibold tracking-wide text-[#FAF8F5] flex items-center gap-1 transition-colors duration-500";
+    if (navbarLogo) navbarLogo.className = "group flex items-center transition-all duration-500 hover:scale-105 brightness-0 invert";
     
     if (navbarNav) {
       const links = navbarNav.querySelectorAll('a');
@@ -249,7 +249,7 @@ const { isTransparent = false } = Astro.props;
     navbarContainer?.classList.remove('py-4');
     navbarContainer?.classList.add('py-2');
     
-    if (navbarLogo) navbarLogo.className = "group font-serif text-2xl font-semibold tracking-wide text-charcoal flex items-center gap-1 transition-colors duration-500";
+    if (navbarLogo) navbarLogo.className = "group flex items-center transition-all duration-500 hover:scale-105 filter-none";
     
     if (navbarNav) {
       const links = navbarNav.querySelectorAll('a');
