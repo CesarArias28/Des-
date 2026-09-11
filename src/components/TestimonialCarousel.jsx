@@ -140,11 +140,11 @@ export default function TestimonialCarousel() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto flex flex-col gap-4">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-[#CDB396]">
+          <span className="text-xs font-black uppercase tracking-[0.25em] text-[#CDB396]">
             TESTIMONIOS & MENTORÍAS 1:1
           </span>
           
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#FAF8F5] leading-[1.08] uppercase">
+          <h2 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-[#FAF8F5] leading-[0.95]">
             TODO ESTO EMPEZÓ <br />
             CON UNA <span className="text-[#CDB396]">IDEA</span>
           </h2>
