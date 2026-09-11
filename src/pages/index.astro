@@ -7,6 +7,7 @@ import TestimonialCarousel from '../components/TestimonialCarousel.jsx';
 import FAQ from '../components/FAQ.jsx';
 import { Image } from 'astro:assets';
 import bioActualizada from '../assets/bio_actualizada.png';
+import bannerHero from '../assets/Banner_Hero_transparent.png';
 import bento1 from '../assets/bento_1.jpg';
 import bento2 from '../assets/bento_2.jpg';
 import bento3 from '../assets/bento_3.jpg';
@@ -38,31 +39,40 @@ import bento4 from '../assets/bento_4.jpg';
       <div class="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-transparent"></div>
 
       <div class="mx-auto max-w-7xl w-full relative z-10 text-left">
-        <div class="max-w-2xl flex flex-col gap-6">
-          <span class="text-xs font-semibold tracking-[0.25em] uppercase text-[#CDB396]">
+        <div class="max-w-2xl flex flex-col gap-5">
+          <span class="text-xs md:text-sm font-semibold tracking-[0.25em] uppercase text-[#CDB396]">
             HOLA, SOY DES
           </span>
-          <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-[#FAF8F5] leading-[1.12]">
-            Hago que tu marca <br />
-            <span class="italic text-[#CDB396]">se vea, conecte y crezca.</span>
-          </h1>
-          <p class="text-soft-sand/85 text-base md:text-lg leading-relaxed max-w-xl">
-            Ayudo a marcas a encontrar su forma de comunicar, crear contenido con intención y construir una presencia digital que realmente las represente. Porque no se trata solo de estar en redes, sino de <strong class="font-semibold text-[#CDB396]">conectar con las personas correctas y hacer que te recuerden.</strong>
+
+          <!-- DESCUBRE Banner Hero Image Graphic -->
+          <div class="w-full my-1">
+            <Image 
+              src={bannerHero} 
+              alt="DESCUBRE" 
+              class="w-full max-w-lg sm:max-w-xl lg:max-w-2xl h-auto object-contain drop-shadow-xl" 
+              width={1000}
+              height={400}
+            />
+          </div>
+
+          <!-- Subtitle: COMUNICA · CREA · CONECTA -->
+          <p class="text-sm sm:text-base md:text-lg font-semibold tracking-[0.25em] sm:tracking-[0.3em] md:tracking-[0.35em] uppercase text-[#CDB396]">
+            COMUNICA &nbsp;·&nbsp; CREA &nbsp;·&nbsp; CONECTA
           </p>
           
           <!-- Segmented CTAs -->
-          <div class="flex flex-col sm:flex-row gap-4 mt-4">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-3">
             <a 
               href="#servicios" 
-              class="inline-block text-center rounded-full bg-[#FAF8F5] px-8 py-4 text-xs font-semibold uppercase tracking-widest text-charcoal hover:bg-[#FAF8F5]/90 hover:shadow-lg hover:shadow-white/10 transition-all duration-300"
+              class="inline-block text-center rounded-full border border-white/40 bg-black/30 backdrop-blur-md px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-white hover:bg-white hover:text-charcoal transition-all duration-300 shadow-md"
             >
-              Soy una Marca
+              SOY UNA MARCA
             </a>
             <a 
               href="#contacto" 
-              class="inline-block text-center rounded-full border border-[#FAF8F5]/60 px-8 py-4 text-xs font-semibold uppercase tracking-widest text-[#FAF8F5] hover:bg-[#FAF8F5] hover:text-charcoal hover:border-[#FAF8F5] transition-all duration-300"
+              class="inline-block text-center rounded-full bg-[#B88B58] px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-white hover:bg-[#A27746] transition-all duration-300 shadow-lg shadow-black/20"
             >
-              Quiero una Mentoría
+              QUIERO UNA MENTORÍA
             </a>
           </div>
         </div>
