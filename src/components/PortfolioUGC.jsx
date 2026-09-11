@@ -151,10 +151,48 @@ const portfolioItems = [
     videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
     posterUrl: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=600&q=80',
     description: 'Entrevistas cortas y cápsulas en vídeo con asistentes y ponentes.'
+  },
+
+  // LAS 2 CARAS (4 Slots)
+  {
+    id: 17,
+    title: 'Las 2 Caras del UGC',
+    category: 'Las 2 Caras',
+    metric: 'Masterclass & Evento',
+    videoUrl: '/reels/crea_team.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80',
+    description: 'Encuentro exclusivo presencial sobre estrategia, creación y monetización de contenido.'
+  },
+  {
+    id: 18,
+    title: 'Behind The Scenes',
+    category: 'Las 2 Caras',
+    metric: 'Producción Real',
+    videoUrl: '/reels/crea_location.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80',
+    description: 'La realidad detrás de cámaras de una creadora UGC y estratega digital.'
+  },
+  {
+    id: 19,
+    title: 'Estrategia vs Ejecución',
+    category: 'Las 2 Caras',
+    metric: 'Formación 360°',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80',
+    description: 'Cómo unir la creatividad visual con una estrategia comercial sólida.'
+  },
+  {
+    id: 20,
+    title: 'Experiencia & Comunidad',
+    category: 'Las 2 Caras',
+    metric: 'Comunidad Exclusiva',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    posterUrl: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80',
+    description: 'Conectando creadores y marcas en un espacio único de aprendizaje.'
   }
 ];
 
-const categories = ['Todos', 'Social Media', 'UGC', 'Mentorías', 'Eventos'];
+const categories = ['Todos', 'Social Media', 'UGC', 'Mentorías', 'Eventos', 'Las 2 Caras'];
 
 // Individual Card Component to handle play-on-hover logic with refs
 const UgcCard = ({ item, onSelect }) => {
