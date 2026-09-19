@@ -101,7 +101,7 @@ const TestimonialCard = ({ item, onSelect }) => {
 
       {/* Bottom Subtitles / Quote Snippet */}
       <div className="relative z-10 text-center pb-2 px-2">
-        <p className="text-xs text-[#FAF8F5] font-serif italic leading-snug drop-shadow-md bg-charcoal/40 backdrop-blur-sm p-3 rounded-[14px] border border-white/10">
+        <p className="text-[11px] text-[#FAF8F5]/90 font-sans font-light leading-relaxed drop-shadow-sm bg-white/15 backdrop-blur-xl p-3.5 rounded-[18px] border border-white/30 shadow-[0_8px_32px_0_rgba(0,0,0,0.25)]">
           {item.quote}
         </p>
       </div>
