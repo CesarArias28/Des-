@@ -29,6 +29,15 @@ const portfolioItems = [
     posterUrl: '/portfolio/social_media/social_media3_poster.jpg',
     description: 'Conceptualización visual y diseño de piezas clave para redes sociales.'
   },
+  {
+    id: 4,
+    title: 'Estrategia de Contenido',
+    category: 'Social Media',
+    metric: 'Producción & Estilo',
+    videoUrl: '/portfolio/social_media/social_media4.mp4',
+    posterUrl: '/portfolio/social_media/social_media4_poster.jpg',
+    description: 'Creación y edición estratégica para impulsar la presencia de marca.'
+  },
 
   // UGC
   {
