@@ -36,5 +36,6 @@ src/assets/Social_media/
 src/assets/UGC/
 src/assets/testimonios/
 src/assets/*.PNG
+!src/assets/Des_Banner.png
 src/assets/*.jfif
 src/assets/junction_test.png
