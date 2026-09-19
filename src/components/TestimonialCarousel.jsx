@@ -162,30 +162,8 @@ export default function TestimonialCarousel() {
           </p>
         </div>
 
-        {/* Carousel Container with Side Navigation Arrows */}
-        <div className="relative group/nav">
-          
-          {/* Left Arrow Button */}
-          <button
-            onClick={() => scrollCarousel('left')}
-            className="absolute left-0 sm:-left-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-terracotta hover:border-terracotta transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
-            aria-label="Anterior testimonio"
-          >
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-
-          {/* Right Arrow Button */}
-          <button
-            onClick={() => scrollCarousel('right')}
-            className="absolute right-0 sm:-right-5 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-charcoal/80 border border-white/20 text-[#FAF8F5] hover:bg-terracotta hover:border-terracotta transition-all duration-300 flex items-center justify-center cursor-pointer shadow-2xl backdrop-blur-md"
-            aria-label="Siguiente testimonio"
-          >
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+        {/* Carousel Container */}
+        <div className="relative">
 
           {/* Horizontal Carousel Riel */}
           <div
