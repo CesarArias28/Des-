@@ -3,48 +3,39 @@ import React, { useState, useRef } from 'react';
 const testimonialItems = [
   {
     id: 1,
-    name: 'NATZIRA ANZURES',
+    name: 'DANIELA CISNEROS',
     role: 'Mentorada 1:1 • Oratoria',
-    quote: '"El primer mes logré resignificar mi relación con la cámara."',
-    videoUrl: '/reels/crea_team.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    quote: '"Logré comunicar lo que hago con seguridad y soltura frente a la cámara."',
+    videoUrl: '/testimonios/daniela_cisneros.mp4',
+    posterUrl: '/testimonios/daniela_cisneros_poster.jpg',
     metric: 'Mentoría Oratoria'
   },
   {
     id: 2,
-    name: 'GABY TABATT',
-    role: 'Creadora UGC & SMM',
-    quote: '"Y es que de verdad soy demasiado perfeccionista, Des me ayudó a soltar."',
-    videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80',
-    metric: 'UGC & Estrategia'
+    name: 'LAURA CORTÉS',
+    role: 'Mentorada 1:1 • Comunicación',
+    quote: '"El acompañamiento de Des me dio las herramientas clave para hablar con confianza."',
+    videoUrl: '/testimonios/laura_cortes.mp4',
+    posterUrl: '/testimonios/laura_cortes_poster.jpg',
+    metric: 'Mentoría Oratoria'
   },
   {
     id: 3,
-    name: 'ROMINA VALENTINA',
-    role: 'Emprendedora Beauty',
-    quote: '"Me ayudó a ajustar mi guión para volver a lanzarme con confianza."',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
+    name: 'LINA LUNADEMI',
+    role: 'Creadora & Emprendedora',
+    quote: '"Encontré la forma auténtica de transmitir el valor y la esencia de mi marca."',
+    videoUrl: '/testimonios/lina_lunademi.mp4',
+    posterUrl: '/testimonios/lina_lunademi_poster.jpg',
     metric: 'Marca Personal'
   },
   {
     id: 4,
-    name: 'CAMILLE CAMPOS',
-    role: 'Fundadora E-commerce',
-    quote: '"Agradezco esa visión tan clara para posicionar el mensaje de mi marca."',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80',
-    metric: 'Estrategia SMM'
-  },
-  {
-    id: 5,
-    name: 'ELENA MENDOZA',
-    role: 'Aura Skincare',
-    quote: '"Nuestros vídeos UGC aumentaron un 40% el engagement en anuncios."',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
-    metric: 'Caso de Éxito'
+    name: 'MARCELA CASTAÑO',
+    role: 'Mentorada 1:1 • Estrategia',
+    quote: '"Des me ayudó a estructurar mis ideas y perder el temor a exponerme en redes."',
+    videoUrl: '/testimonios/marcela_castano.mp4',
+    posterUrl: '/testimonios/marcela_castano_poster.jpg',
+    metric: 'Mentoría & Estrategia'
   }
 ];
 
