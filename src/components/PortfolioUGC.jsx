@@ -41,34 +41,16 @@ const portfolioItems = [
 
   // UGC
   {
-    id: 4,
-    title: 'CREA Espacio Creativo',
-    category: 'UGC',
-    metric: 'Contenido 9:16',
-    videoUrl: '/portfolio/ugc/ugc_1.mp4',
-    posterUrl: '/portfolio/ugc/ugc_1_poster.jpg',
-    description: 'Vídeo estético mostrando la experiencia y locación de CREA.'
-  },
-  {
     id: 5,
-    title: 'CREA Proyecto & Equipo',
+    title: 'Contenido Lifestyle & Beauty',
     category: 'UGC',
-    metric: 'Detrás de Cámaras',
-    videoUrl: '/portfolio/ugc/ugc_2.mp4',
-    posterUrl: '/portfolio/ugc/ugc_2_poster.jpg',
-    description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
+    metric: 'Producción UGC',
+    videoUrl: '/portfolio/ugc/ugc_5.mp4',
+    posterUrl: '/portfolio/ugc/ugc_5_poster.jpg',
+    description: 'Piezas audiovisuales pensadas para orgánico y campañas publicitarias.'
   },
   {
     id: 6,
-    title: 'Moka Ritual Coffee',
-    category: 'UGC',
-    metric: 'Lifestyle & Unboxing',
-    videoUrl: '/portfolio/ugc/ugc_3.mp4',
-    posterUrl: '/portfolio/ugc/ugc_3_poster.jpg',
-    description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
-  },
-  {
-    id: 7,
     title: 'Bloom Lip Oil',
     category: 'UGC',
     metric: 'Orgánico Viral',
@@ -77,13 +59,31 @@ const portfolioItems = [
     description: 'Demostración de producto con narrativa natural y persuasiva.'
   },
   {
-    id: 8,
-    title: 'Contenido Lifestyle & Beauty',
+    id: 7,
+    title: 'CREA Proyecto & Equipo',
     category: 'UGC',
-    metric: 'Producción UGC',
-    videoUrl: '/portfolio/ugc/ugc_5.mp4',
-    posterUrl: '/portfolio/ugc/ugc_5_poster.jpg',
-    description: 'Piezas audiovisuales pensadas para orgánico y campañas publicitarias.'
+    metric: 'Detrás de Cámaras',
+    videoUrl: '/portfolio/ugc/ugc_2.mp4',
+    posterUrl: '/portfolio/ugc/ugc_2_poster.jpg',
+    description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
+  },
+  {
+    id: 8,
+    title: 'CREA Espacio Creativo',
+    category: 'UGC',
+    metric: 'Contenido 9:16',
+    videoUrl: '/portfolio/ugc/ugc_1.mp4',
+    posterUrl: '/portfolio/ugc/ugc_1_poster.jpg',
+    description: 'Vídeo estético mostrando la experiencia y locación de CREA.'
+  },
+  {
+    id: 9,
+    title: 'Moka Ritual Coffee',
+    category: 'UGC',
+    metric: 'Lifestyle & Unboxing',
+    videoUrl: '/portfolio/ugc/ugc_3.mp4',
+    posterUrl: '/portfolio/ugc/ugc_3_poster.jpg',
+    description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
   },
 
   // MENTORÍAS
@@ -210,7 +210,7 @@ const portfolioItems = [
   }
 ];
 
-const categories = ['Social Media', 'UGC', 'Mentorías', 'Eventos', 'Las 2 Caras'];
+const categories = ['UGC', 'Social Media', 'Mentorías', 'Eventos', 'Las 2 Caras'];
 
 // Individual Card Component to handle play-on-hover logic with refs
 const UgcCard = ({ item, onSelect }) => {
@@ -288,7 +288,7 @@ const UgcCard = ({ item, onSelect }) => {
 };
 
 export default function PortfolioUGC() {
-  const [activeFilter, setActiveFilter] = useState('Social Media');
+  const [activeFilter, setActiveFilter] = useState('UGC');
   const [activeVideo, setActiveVideo] = useState(null);
   const carouselRef = useRef(null);
   const modalVideoRef = useRef(null);
