@@ -29,3 +29,12 @@ pnpm-debug.log*
 *.MP4
 *.MOV
 
+# Raw video asset source folders
+src/assets/Eventos/
+src/assets/Mentorias/
+src/assets/Social_media/
+src/assets/UGC/
+src/assets/testimonios/
+src/assets/*.PNG
+src/assets/*.jfif
+src/assets/junction_test.png
