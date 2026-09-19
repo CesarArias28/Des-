@@ -210,7 +210,7 @@ const portfolioItems = [
   }
 ];
 
-const categories = ['Todos', 'Social Media', 'UGC', 'Mentorías', 'Eventos', 'Las 2 Caras'];
+const categories = ['Social Media', 'UGC', 'Mentorías', 'Eventos', 'Las 2 Caras'];
 
 // Individual Card Component to handle play-on-hover logic with refs
 const UgcCard = ({ item, onSelect }) => {
@@ -272,7 +272,7 @@ const UgcCard = ({ item, onSelect }) => {
       {/* Card Footer (Liquid Glass Panel) */}
       <div className="bg-white/15 backdrop-blur-xl border border-white/30 p-4 rounded-[18px] shadow-[0_8px_32px_0_rgba(0,0,0,0.25)] flex flex-col gap-1.5 transform group-hover:translate-y-[-2px] group-hover:border-white/50 transition-all duration-300 relative z-10">
         <div className="flex justify-between items-center">
-          <h3 className="font-serif text-base font-medium text-[#FAF8F5] drop-shadow-sm">
+          <h3 className="font-sans text-sm font-semibold text-[#FAF8F5] drop-shadow-sm">
             {item.title}
           </h3>
           <span className="text-[10px] uppercase font-bold tracking-wider text-[#E0A890] bg-[#C48B71]/20 px-2.5 py-0.5 rounded-full border border-[#C48B71]/40 backdrop-blur-sm shadow-sm">
@@ -288,7 +288,7 @@ const UgcCard = ({ item, onSelect }) => {
 };
 
 export default function PortfolioUGC() {
-  const [activeFilter, setActiveFilter] = useState('Todos');
+  const [activeFilter, setActiveFilter] = useState('Social Media');
   const [activeVideo, setActiveVideo] = useState(null);
   const carouselRef = useRef(null);
   const modalVideoRef = useRef(null);
@@ -309,9 +309,7 @@ export default function PortfolioUGC() {
     }
   }, [activeVideo]);
 
-  const filteredItems = activeFilter === 'Todos'
-    ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeFilter);
+  const filteredItems = portfolioItems.filter(item => item.category === activeFilter);
 
   const scrollCarousel = (direction) => {
     if (carouselRef.current) {
