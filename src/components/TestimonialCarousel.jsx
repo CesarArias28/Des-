@@ -157,13 +157,6 @@ export default function TestimonialCarousel() {
             CON UNA <span className="text-[#CDB396]">IDEA</span>
           </h2>
 
-          {/* Star Sparkle Divider Motif */}
-          <div className="flex items-center justify-center gap-3 my-1">
-            <div className="h-[1px] w-12 bg-[#CDB396]/40"></div>
-            <span className="text-[#CDB396] text-xs">✦</span>
-            <div className="h-[1px] w-12 bg-[#CDB396]/40"></div>
-          </div>
-
           <p className="text-soft-sand/85 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-light">
             Personas, creadores y marcas que confiaron en mí para <strong className="font-semibold text-[#CDB396]">comunicar</strong> mejor, <strong className="font-semibold text-[#CDB396]">crear</strong> contenido y <strong className="font-semibold text-[#CDB396]">potenciar</strong> su presencia digital.
           </p>
