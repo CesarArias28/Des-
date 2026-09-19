@@ -24,10 +24,10 @@ pnpm-debug.log*
 .idea/
 
 # Large media files
-*.mp4
 *.mov
-*.MP4
 *.MOV
+!public/**/*.mp4
+!public/**/*.MP4
 
 # Raw video asset source folders
 src/assets/Eventos/
