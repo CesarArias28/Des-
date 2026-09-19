@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const portfolioItems = [
   // SOCIAL MEDIA
@@ -282,6 +282,23 @@ export default function PortfolioUGC() {
   const [activeFilter, setActiveFilter] = useState('Todos');
   const [activeVideo, setActiveVideo] = useState(null);
   const carouselRef = useRef(null);
+  const modalVideoRef = useRef(null);
+
+  useEffect(() => {
+    if (activeVideo && modalVideoRef.current) {
+      modalVideoRef.current.currentTime = 0;
+      const playPromise = modalVideoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.warn("Unmuted autoplay blocked, attempting muted fallback:", err);
+          if (modalVideoRef.current) {
+            modalVideoRef.current.muted = true;
+            modalVideoRef.current.play().catch(e => console.error(e));
+          }
+        });
+      }
+    }
+  }, [activeVideo]);
 
   const filteredItems = activeFilter === 'Todos'
     ? portfolioItems
@@ -354,13 +371,13 @@ export default function PortfolioUGC() {
 
             {/* HTML5 Video Player */}
             <video
+              ref={modalVideoRef}
               src={activeVideo.videoUrl}
+              poster={activeVideo.posterUrl}
               className="w-full h-full object-cover"
-              autoPlay
-              loop
-              playsInline
               controls
-              muted={false}
+              playsInline
+              loop
             >
               Su navegador no soporta reproducción de video.
             </video>

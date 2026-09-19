@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const testimonialItems = [
   {
@@ -112,6 +112,23 @@ const TestimonialCard = ({ item, onSelect }) => {
 export default function TestimonialCarousel() {
   const [activeVideo, setActiveVideo] = useState(null);
   const carouselRef = useRef(null);
+  const modalVideoRef = useRef(null);
+
+  useEffect(() => {
+    if (activeVideo && modalVideoRef.current) {
+      modalVideoRef.current.currentTime = 0;
+      const playPromise = modalVideoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.warn("Unmuted autoplay blocked, attempting muted fallback:", err);
+          if (modalVideoRef.current) {
+            modalVideoRef.current.muted = true;
+            modalVideoRef.current.play().catch(e => console.error(e));
+          }
+        });
+      }
+    }
+  }, [activeVideo]);
 
   const scrollCarousel = (direction) => {
     if (carouselRef.current) {
@@ -227,13 +244,13 @@ export default function TestimonialCarousel() {
 
             {/* Video Player */}
             <video
+              ref={modalVideoRef}
               src={activeVideo.videoUrl}
+              poster={activeVideo.posterUrl}
               className="w-full h-full object-cover"
-              autoPlay
-              loop
-              playsInline
               controls
-              muted={false}
+              playsInline
+              loop
             >
               Tu navegador no soporta reproducción de vídeo.
             </video>
