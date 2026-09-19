@@ -211,12 +211,12 @@ export default function TestimonialCarousel() {
         </div>
 
         {/* Bottom Prominent CTA Button */}
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-6">
           <a
             href="https://wa.me/34677963943?text=%C2%A1Hola%20Des!%20Me%20interesa%20reservar%20una%20mentor%C3%ADa%201:1."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-center rounded-full bg-terracotta px-10 py-4 text-xs sm:text-sm font-black uppercase tracking-widest text-[#FAF8F5] hover:bg-terracotta/90 hover:shadow-2xl hover:shadow-terracotta/30 transition-all duration-300 hover:scale-105"
+            className="inline-block text-center rounded-full bg-terracotta px-12 sm:px-16 py-5 text-sm sm:text-base font-black uppercase tracking-widest text-[#FAF8F5] hover:bg-terracotta/90 hover:shadow-2xl hover:shadow-terracotta/40 transition-all duration-300 hover:scale-105 shadow-xl shadow-terracotta/25"
           >
             Reserva tu Mentoría Ahora
           </a>
