@@ -1,14 +1,14 @@
 import React, { useState, useRef } from 'react';
 
 const portfolioItems = [
-  // SOCIAL MEDIA (4 Slots)
+  // SOCIAL MEDIA
   {
     id: 1,
     title: 'Estrategia & Planificación',
     category: 'Social Media',
     metric: 'SMM Estratégico',
-    videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/social_media/social_media1.mp4',
+    posterUrl: '/portfolio/social_media/social_media1_poster.jpg',
     description: 'Construcción de presencia digital y planificación estratégica de contenidos.'
   },
   {
@@ -16,75 +16,75 @@ const portfolioItems = [
     title: 'Gestión de Comunidad',
     category: 'Social Media',
     metric: 'Engagement & Conexión',
-    videoUrl: '/reels/crea_team.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
-    description: 'Interacción auténtica y dinamización de comunidad para marcas e-commerce.'
+    videoUrl: '/portfolio/social_media/social_media2.mp4',
+    posterUrl: '/portfolio/social_media/social_media2_poster.jpg',
+    description: 'Interacción auténtica y dinamización de comunidad para marcas.'
   },
   {
     id: 3,
     title: 'Dirección Creativa',
     category: 'Social Media',
     metric: 'Identidad Visual',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/social_media/social_media3.mp4',
+    posterUrl: '/portfolio/social_media/social_media3_poster.jpg',
     description: 'Conceptualización visual y diseño de piezas clave para redes sociales.'
   },
+
+  // UGC
   {
     id: 4,
-    title: 'Auditoría Digital',
-    category: 'Social Media',
-    metric: 'Optimización 360°',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80',
-    description: 'Análisis detallado de canales y recomendaciones tácticas de crecimiento.'
-  },
-
-  // UGC (4 Slots)
-  {
-    id: 5,
     title: 'CREA Espacio Creativo',
     category: 'UGC',
     metric: 'Contenido 9:16',
-    videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80',
-    description: 'Vídeo estético mostrando la ubicación de CREA en Sant Just Desvern.'
+    videoUrl: '/portfolio/ugc/ugc_1.mp4',
+    posterUrl: '/portfolio/ugc/ugc_1_poster.jpg',
+    description: 'Vídeo estético mostrando la experiencia y locación de CREA.'
   },
   {
-    id: 6,
+    id: 5,
     title: 'CREA Proyecto & Equipo',
     category: 'UGC',
     metric: 'Detrás de Cámaras',
-    videoUrl: '/reels/crea_team.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/ugc/ugc_2.mp4',
+    posterUrl: '/portfolio/ugc/ugc_2_poster.jpg',
     description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
   },
   {
-    id: 7,
+    id: 6,
     title: 'Moka Ritual Coffee',
     category: 'UGC',
     metric: 'Lifestyle & Unboxing',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/ugc/ugc_3.mp4',
+    posterUrl: '/portfolio/ugc/ugc_3_poster.jpg',
     description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
   },
   {
-    id: 8,
+    id: 7,
     title: 'Bloom Lip Oil',
     category: 'UGC',
     metric: 'Orgánico Viral',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80',
-    description: 'ASMR unboxing y prueba de tonos con voz en off de oratoria persuasiva.'
+    videoUrl: '/portfolio/ugc/ugc_4.mp4',
+    posterUrl: '/portfolio/ugc/ugc_4_poster.jpg',
+    description: 'Demostración de producto con narrativa natural y persuasiva.'
+  },
+  {
+    id: 8,
+    title: 'Contenido Lifestyle & Beauty',
+    category: 'UGC',
+    metric: 'Producción UGC',
+    videoUrl: '/portfolio/ugc/ugc_5.mp4',
+    posterUrl: '/portfolio/ugc/ugc_5_poster.jpg',
+    description: 'Piezas audiovisuales pensadas para orgánico y campañas publicitarias.'
   },
 
-  // MENTORÍAS (4 Slots)
+  // MENTORÍAS
   {
     id: 9,
     title: 'Oratoria & Cámara',
     category: 'Mentorías',
     metric: 'Programa 1:1',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/mentorias/mentorias_1.mp4',
+    posterUrl: '/portfolio/mentorias/mentorias_1_poster.jpg',
     description: 'Desenvolvimiento frente a cámara y técnicas de modulación de voz.'
   },
   {
@@ -92,8 +92,8 @@ const portfolioItems = [
     title: 'Marca Personal',
     category: 'Mentorías',
     metric: 'Posicionamiento',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1580894732413-a70493407422?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/mentorias/mentorias_2.mp4',
+    posterUrl: '/portfolio/mentorias/mentorias_2_poster.jpg',
     description: 'Construcción de propuesta de valor y comunicación con propósito.'
   },
   {
@@ -101,8 +101,8 @@ const portfolioItems = [
     title: 'Estrategia de Voz',
     category: 'Mentorías',
     metric: 'Storytelling 1:1',
-    videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/mentorias/mentorias_3.mp4',
+    posterUrl: '/portfolio/mentorias/mentorias_3_poster.jpg',
     description: 'Definición de pilares narrativos para conectar con tu audiencia.'
   },
   {
@@ -110,19 +110,19 @@ const portfolioItems = [
     title: 'Desarrollo de Mensaje',
     category: 'Mentorías',
     metric: 'Confianza Digital',
-    videoUrl: '/reels/crea_team.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/mentorias/mentorias_4.mp4',
+    posterUrl: '/portfolio/mentorias/mentorias_4_poster.jpg',
     description: 'Superación de bloqueos creativos y seguridad para comunicar lo que haces.'
   },
 
-  // EVENTOS (4 Slots)
+  // EVENTOS
   {
     id: 13,
     title: 'Cobertura en Vivo',
     category: 'Eventos',
     metric: 'Live Streaming',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_1.mp4',
+    posterUrl: '/portfolio/eventos/eventos_1_poster.jpg',
     description: 'Creación de contenido dinámico en tiempo real para eventos de marca.'
   },
   {
@@ -130,8 +130,8 @@ const portfolioItems = [
     title: 'Talleres & Workshops',
     category: 'Eventos',
     metric: 'Formación Presencial',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_2.mp4',
+    posterUrl: '/portfolio/eventos/eventos_2_poster.jpg',
     description: 'Sesiones grupales de oratoria y estrategias de comunicación práctica.'
   },
   {
@@ -139,8 +139,8 @@ const portfolioItems = [
     title: 'Lanzamiento de Marca',
     category: 'Eventos',
     metric: 'Experiencia Inmersiva',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_3.mp4',
+    posterUrl: '/portfolio/eventos/eventos_3_poster.jpg',
     description: 'Documentación estética y contenido UGC durante lanzamientos VIP.'
   },
   {
@@ -148,46 +148,55 @@ const portfolioItems = [
     title: 'Networking & Experiencia',
     category: 'Eventos',
     metric: 'Comunidad Real',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_4.mp4',
+    posterUrl: '/portfolio/eventos/eventos_4_poster.jpg',
     description: 'Entrevistas cortas y cápsulas en vídeo con asistentes y ponentes.'
   },
-
-  // LAS 2 CARAS (4 Slots)
   {
     id: 17,
+    title: 'Experiencia Presencial Eventos',
+    category: 'Eventos',
+    metric: 'Cobertura 360°',
+    videoUrl: '/portfolio/eventos/eventos_5.mp4',
+    posterUrl: '/portfolio/eventos/eventos_5_poster.jpg',
+    description: 'Resumen audiovisual de encuentros de comunidad y ponencias.'
+  },
+
+  // LAS 2 CARAS
+  {
+    id: 18,
     title: 'Las 2 Caras del UGC',
     category: 'Las 2 Caras',
     metric: 'Masterclass & Evento',
-    videoUrl: '/reels/crea_team.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_1.mp4',
+    posterUrl: '/portfolio/eventos/eventos_1_poster.jpg',
     description: 'Encuentro exclusivo presencial sobre estrategia, creación y monetización de contenido.'
   },
   {
-    id: 18,
+    id: 19,
     title: 'Behind The Scenes',
     category: 'Las 2 Caras',
     metric: 'Producción Real',
-    videoUrl: '/reels/crea_location.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_2.mp4',
+    posterUrl: '/portfolio/eventos/eventos_2_poster.jpg',
     description: 'La realidad detrás de cámaras de una creadora UGC y estratega digital.'
   },
   {
-    id: 19,
+    id: 20,
     title: 'Estrategia vs Ejecución',
     category: 'Las 2 Caras',
     metric: 'Formación 360°',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_4.mp4',
+    posterUrl: '/portfolio/eventos/eventos_4_poster.jpg',
     description: 'Cómo unir la creatividad visual con una estrategia comercial sólida.'
   },
   {
-    id: 20,
+    id: 21,
     title: 'Experiencia & Comunidad',
     category: 'Las 2 Caras',
     metric: 'Comunidad Exclusiva',
-    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
-    posterUrl: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80',
+    videoUrl: '/portfolio/eventos/eventos_5.mp4',
+    posterUrl: '/portfolio/eventos/eventos_5_poster.jpg',
     description: 'Conectando creadores y marcas en un espacio único de aprendizaje.'
   }
 ];
