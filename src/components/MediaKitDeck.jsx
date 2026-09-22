@@ -58,7 +58,7 @@ export default function MediaKitDeck() {
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight text-charcoal leading-[1.1]">
               Comunicar para <br />
-              <span class="italic text-sage">conectar con alma</span>.
+              <span className="italic text-sage">conectar con alma</span>.
             </h1>
             <p className="text-warm-gray text-base sm:text-lg leading-relaxed max-w-xl">
               Social Media Strategy, creación de contenido vertical UGC y mentoría 1:1. Diseñando narrativas estéticas y estratégicas para impulsar marcas y creadores conscientes.
@@ -89,8 +89,8 @@ export default function MediaKitDeck() {
             </div>
             <div className="md:col-span-7 flex flex-col gap-4 text-left">
               <span className="text-[10px] font-bold uppercase tracking-widest text-warm-gray">Sobre Mí</span>
-              <h2 class="font-serif text-3xl font-medium text-charcoal">Des Meneses</h2>
-              <h3 class="text-xs font-semibold uppercase tracking-wider text-sage -mt-2">Licenciada en Comunicación Social</h3>
+              <h2 className="font-serif text-3xl font-medium text-charcoal">Des Meneses</h2>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-sage -mt-2">Licenciada en Comunicación Social</h3>
               <p className="text-warm-gray text-sm leading-relaxed mt-2">
                 Con una sólida base académica y profesional, mi enfoque digital se desmarca del corporativismo invasivo. Investigo y planifico cada pieza de contenido con psicología de ventas y oratoria consciente. 
               </p>
@@ -120,7 +120,7 @@ export default function MediaKitDeck() {
                 <div className="relative aspect-[9/16] w-full rounded-[18px] overflow-hidden border border-soft-sand shadow-md bg-soft-sand">
                   <video 
                     src="/reels/crea_location.mp4" 
-                    poster="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+                    poster="/portfolio/ugc/ugc_1_poster.jpg"
                     className="w-full h-full object-cover"
                     autoPlay
                     controls
@@ -137,7 +137,7 @@ export default function MediaKitDeck() {
                 <div className="relative aspect-[9/16] w-full rounded-[18px] overflow-hidden border border-soft-sand shadow-md bg-soft-sand">
                   <video 
                     src="/reels/crea_team.mp4" 
-                    poster="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+                    poster="/portfolio/ugc/ugc_2_poster.jpg"
                     className="w-full h-full object-cover"
                     autoPlay
                     controls

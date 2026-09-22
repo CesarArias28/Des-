@@ -88,7 +88,7 @@ const portfolioItems = [
 
   // MENTORÍAS
   {
-    id: 9,
+    id: 10,
     title: 'Oratoria & Cámara',
     category: 'Mentorías',
     metric: 'Programa 1:1',
@@ -97,7 +97,7 @@ const portfolioItems = [
     description: 'Desenvolvimiento frente a cámara y técnicas de modulación de voz.'
   },
   {
-    id: 10,
+    id: 11,
     title: 'Marca Personal',
     category: 'Mentorías',
     metric: 'Posicionamiento',
@@ -106,7 +106,7 @@ const portfolioItems = [
     description: 'Construcción de propuesta de valor y comunicación con propósito.'
   },
   {
-    id: 11,
+    id: 12,
     title: 'Estrategia de Voz',
     category: 'Mentorías',
     metric: 'Storytelling 1:1',
@@ -115,7 +115,7 @@ const portfolioItems = [
     description: 'Definición de pilares narrativos para conectar con tu audiencia.'
   },
   {
-    id: 12,
+    id: 13,
     title: 'Desarrollo de Mensaje',
     category: 'Mentorías',
     metric: 'Confianza Digital',
@@ -126,7 +126,7 @@ const portfolioItems = [
 
   // EVENTOS
   {
-    id: 13,
+    id: 14,
     title: 'Cobertura en Vivo',
     category: 'Eventos',
     metric: 'Live Streaming',
@@ -135,7 +135,7 @@ const portfolioItems = [
     description: 'Creación de contenido dinámico en tiempo real para eventos de marca.'
   },
   {
-    id: 14,
+    id: 15,
     title: 'Talleres & Workshops',
     category: 'Eventos',
     metric: 'Formación Presencial',
@@ -144,7 +144,7 @@ const portfolioItems = [
     description: 'Sesiones grupales de oratoria y estrategias de comunicación práctica.'
   },
   {
-    id: 15,
+    id: 16,
     title: 'Lanzamiento de Marca',
     category: 'Eventos',
     metric: 'Experiencia Inmersiva',
@@ -153,7 +153,7 @@ const portfolioItems = [
     description: 'Documentación estética y contenido UGC durante lanzamientos VIP.'
   },
   {
-    id: 16,
+    id: 17,
     title: 'Networking & Experiencia',
     category: 'Eventos',
     metric: 'Comunidad Real',
@@ -162,7 +162,7 @@ const portfolioItems = [
     description: 'Entrevistas cortas y cápsulas en vídeo con asistentes y ponentes.'
   },
   {
-    id: 17,
+    id: 18,
     title: 'Experiencia Presencial Eventos',
     category: 'Eventos',
     metric: 'Cobertura 360°',
@@ -173,7 +173,7 @@ const portfolioItems = [
 
   // LAS 2 CARAS
   {
-    id: 18,
+    id: 19,
     title: 'Las 2 Caras del UGC',
     category: 'Las 2 Caras',
     metric: 'Masterclass & Evento',
@@ -182,7 +182,7 @@ const portfolioItems = [
     description: 'Encuentro exclusivo presencial sobre estrategia, creación y monetización de contenido.'
   },
   {
-    id: 19,
+    id: 20,
     title: 'Behind The Scenes',
     category: 'Las 2 Caras',
     metric: 'Producción Real',
@@ -191,7 +191,7 @@ const portfolioItems = [
     description: 'La realidad detrás de cámaras de una creadora UGC y estratega digital.'
   },
   {
-    id: 20,
+    id: 21,
     title: 'Estrategia vs Ejecución',
     category: 'Las 2 Caras',
     metric: 'Formación 360°',
@@ -200,7 +200,7 @@ const portfolioItems = [
     description: 'Cómo unir la creatividad visual con una estrategia comercial sólida.'
   },
   {
-    id: 21,
+    id: 22,
     title: 'Experiencia & Comunidad',
     category: 'Las 2 Caras',
     metric: 'Comunidad Exclusiva',
