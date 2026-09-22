@@ -219,10 +219,10 @@ export default function MediaKitDeck() {
             
             <div className="flex flex-col gap-2 mt-2">
               <a 
-                href="mailto:hola@desmenesesm.com" 
+                href="mailto:Desireemeneses27@gmail.com" 
                 className="font-serif text-lg font-medium text-charcoal hover:text-sage transition-colors underline decoration-sage/50"
               >
-                hola@desmenesesm.com
+                Desireemeneses27@gmail.com
               </a>
               <span className="text-xs text-warm-gray">Instagram: @desmenesesm</span>
             </div>
