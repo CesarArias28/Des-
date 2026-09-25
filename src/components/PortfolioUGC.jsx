@@ -9,7 +9,7 @@ const portfolioItems = [
     metric: 'SMM Estratégico',
     videoUrl: '/portfolio/social_media/social_media1.mp4',
     posterUrl: '/portfolio/social_media/social_media1_poster.jpg',
-    description: 'Construcción de presencia digital y planificación estratégica de contenidos.'
+    description: 'Transformamos la visión de tu marca en un plan de contenidos mensual que atrae y convierte.'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const portfolioItems = [
     metric: 'Engagement & Conexión',
     videoUrl: '/portfolio/social_media/social_media2.mp4',
     posterUrl: '/portfolio/social_media/social_media2_poster.jpg',
-    description: 'Interacción auténtica y dinamización de comunidad para marcas.'
+    description: 'Fidelización activa de clientes a través de interacciones reales que generan lealtad.'
   },
   {
     id: 3,
@@ -27,16 +27,16 @@ const portfolioItems = [
     metric: 'Identidad Visual',
     videoUrl: '/portfolio/social_media/social_media3.mp4',
     posterUrl: '/portfolio/social_media/social_media3_poster.jpg',
-    description: 'Conceptualización visual y diseño de piezas clave para redes sociales.'
+    description: 'Un feed coherente, sofisticado y alineado con la personalidad premium de tu marca.'
   },
   {
     id: 4,
     title: 'Estrategia de Contenido',
     category: 'Social Media',
-    metric: 'Producción & Estilo',
+    metric: 'Producción Audiovisual',
     videoUrl: '/portfolio/social_media/social_media4.mp4',
     posterUrl: '/portfolio/social_media/social_media4_poster.jpg',
-    description: 'Creación y edición estratégica para impulsar la presencia de marca.'
+    description: 'Formateo audiovisual de alto rendimiento para maximizar alcance orgánico en Reels y TikTok.'
   },
 
   // UGC
@@ -94,7 +94,7 @@ const portfolioItems = [
     metric: 'Programa 1:1',
     videoUrl: '/portfolio/mentorias/mentorias_1.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_1_poster.jpg',
-    description: 'Desenvolvimiento frente a cámara y técnicas de modulación de voz.'
+    description: 'Pierde el miedo a hablarle a la lente y transmite tu mensaje con naturalidad, fluidez y autoridad.'
   },
   {
     id: 11,
@@ -103,7 +103,7 @@ const portfolioItems = [
     metric: 'Posicionamiento',
     videoUrl: '/portfolio/mentorias/mentorias_2.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_2_poster.jpg',
-    description: 'Construcción de propuesta de valor y comunicación con propósito.'
+    description: 'Descubre tu diferencial único y construye una presencia digital alineada a tus valores.'
   },
   {
     id: 12,
@@ -112,7 +112,7 @@ const portfolioItems = [
     metric: 'Storytelling 1:1',
     videoUrl: '/portfolio/mentorias/mentorias_3.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_3_poster.jpg',
-    description: 'Definición de pilares narrativos para conectar con tu audiencia.'
+    description: 'Domina el arte de estructurar guiones y discursos que enganchen a tu comunidad desde el inicio.'
   },
   {
     id: 13,
@@ -121,7 +121,7 @@ const portfolioItems = [
     metric: 'Confianza Digital',
     videoUrl: '/portfolio/mentorias/mentorias_4.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_4_poster.jpg',
-    description: 'Superación de bloqueos creativos y seguridad para comunicar lo que haces.'
+    description: 'Desbloquea tu potencial comunicativo y gana la seguridad para mostrar lo que haces sin filtros.'
   },
 
   // EVENTOS
@@ -129,10 +129,10 @@ const portfolioItems = [
     id: 14,
     title: 'Cobertura en Vivo',
     category: 'Eventos',
-    metric: 'Live Streaming',
+    metric: 'Live Content',
     videoUrl: '/portfolio/eventos/eventos_1.mp4',
     posterUrl: '/portfolio/eventos/eventos_1_poster.jpg',
-    description: 'Creación de contenido dinámico en tiempo real para eventos de marca.'
+    description: 'Creación de contenido dinámico en tiempo real para capturar la energía de tus eventos VIP.'
   },
   {
     id: 15,
@@ -141,7 +141,7 @@ const portfolioItems = [
     metric: 'Formación Presencial',
     videoUrl: '/portfolio/eventos/eventos_2.mp4',
     posterUrl: '/portfolio/eventos/eventos_2_poster.jpg',
-    description: 'Sesiones grupales de oratoria y estrategias de comunicación práctica.'
+    description: 'Sesiones prácticas de oratoria y comunicación para potenciar el talento de tu equipo.'
   },
   {
     id: 16,
@@ -150,25 +150,25 @@ const portfolioItems = [
     metric: 'Experiencia Inmersiva',
     videoUrl: '/portfolio/eventos/eventos_3.mp4',
     posterUrl: '/portfolio/eventos/eventos_3_poster.jpg',
-    description: 'Documentación estética y contenido UGC durante lanzamientos VIP.'
+    description: 'Documentación estética y contenido audiovisual exclusivo durante lanzamientos de marca.'
   },
   {
     id: 17,
-    title: 'Networking & Experiencia',
+    title: 'Networking & Comunidad',
     category: 'Eventos',
     metric: 'Comunidad Real',
     videoUrl: '/portfolio/eventos/eventos_4.mp4',
     posterUrl: '/portfolio/eventos/eventos_4_poster.jpg',
-    description: 'Entrevistas cortas y cápsulas en vídeo con asistentes y ponentes.'
+    description: 'Entrevistas cortas y cápsulas en vídeo para amplificar la voz de asistentes y marcas.'
   },
   {
     id: 18,
-    title: 'Experiencia Presencial Eventos',
+    title: 'Experiencia Presencial',
     category: 'Eventos',
     metric: 'Cobertura 360°',
     videoUrl: '/portfolio/eventos/eventos_5.mp4',
     posterUrl: '/portfolio/eventos/eventos_5_poster.jpg',
-    description: 'Resumen audiovisual de encuentros de comunidad y ponencias.'
+    description: 'Resumen audiovisual de encuentros de comunidad, dinámicas y ponencias presenciales.'
   },
 
   // LAS 2 CARAS
@@ -179,7 +179,7 @@ const portfolioItems = [
     metric: 'Masterclass & Evento',
     videoUrl: '/portfolio/eventos/eventos_1.mp4',
     posterUrl: '/portfolio/eventos/eventos_1_poster.jpg',
-    description: 'Encuentro exclusivo presencial sobre estrategia, creación y monetización de contenido.'
+    description: 'El encuentro exclusivo donde conectamos la estrategia de ventas con la creación de contenido auténtico.'
   },
   {
     id: 20,
@@ -188,7 +188,7 @@ const portfolioItems = [
     metric: 'Producción Real',
     videoUrl: '/portfolio/eventos/eventos_2.mp4',
     posterUrl: '/portfolio/eventos/eventos_2_poster.jpg',
-    description: 'La realidad detrás de cámaras de una creadora UGC y estratega digital.'
+    description: 'La realidad detrás de cámaras y el proceso de trabajo de una creadora UGC y estratega digital.'
   },
   {
     id: 21,
@@ -197,7 +197,7 @@ const portfolioItems = [
     metric: 'Formación 360°',
     videoUrl: '/portfolio/eventos/eventos_4.mp4',
     posterUrl: '/portfolio/eventos/eventos_4_poster.jpg',
-    description: 'Cómo unir la creatividad visual con una estrategia comercial sólida.'
+    description: 'Cómo unir la sensibilidad visual con una visión comercial sólida para escalar tu marca.'
   },
   {
     id: 22,
@@ -206,7 +206,7 @@ const portfolioItems = [
     metric: 'Comunidad Exclusiva',
     videoUrl: '/portfolio/eventos/eventos_5.mp4',
     posterUrl: '/portfolio/eventos/eventos_5_poster.jpg',
-    description: 'Conectando creadores y marcas en un espacio único de aprendizaje.'
+    description: 'Conectando creadores y marcas en un espacio único de aprendizaje e inspiración.'
   }
 ];
 
