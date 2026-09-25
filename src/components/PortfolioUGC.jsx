@@ -127,39 +127,39 @@ const portfolioItems = [
   // EVENTOS
   {
     id: 14,
-    title: 'Cobertura en Vivo',
+    title: 'Presentación & Host en Tarima',
     category: 'Eventos',
-    metric: 'Live Content',
+    metric: 'LIVE HOST',
     videoUrl: '/portfolio/eventos/eventos_1.mp4',
     posterUrl: '/portfolio/eventos/eventos_1_poster.jpg',
-    description: 'Creación de contenido dinámico en tiempo real para capturar la energía de tus eventos VIP.'
+    description: 'Conducción de eventos en vivo, manejo de energía de sala y presentación de marcas o artistas frente al público.'
   },
   {
     id: 16,
     title: 'Lanzamiento de Marca',
     category: 'Eventos',
-    metric: 'Experiencia Inmersiva',
+    metric: 'LANZAMIENTOS',
     videoUrl: '/portfolio/eventos/eventos_3.mp4',
     posterUrl: '/portfolio/eventos/eventos_3_poster.jpg',
-    description: 'Documentación estética y contenido audiovisual exclusivo durante lanzamientos de marca.'
+    description: 'Documentación audiovisual y amplificación estratégica para presentar nuevos productos o proyectos al mercado.'
   },
   {
     id: 17,
-    title: 'Networking & Comunidad',
+    title: 'Networking & Dinamización',
     category: 'Eventos',
-    metric: 'Comunidad Real',
+    metric: 'COMUNIDAD REAL',
     videoUrl: '/portfolio/eventos/eventos_4.mp4',
     posterUrl: '/portfolio/eventos/eventos_4_poster.jpg',
-    description: 'Entrevistas cortas y cápsulas en vídeo para amplificar la voz de asistentes y marcas.'
+    description: 'Entrevistas dinámicas y cápsulas en tiempo real para visibilizar a ponentes, marcas colaboradoras y asistentes.'
   },
   {
     id: 18,
-    title: 'Experiencia Presencial',
+    title: 'Cobertura & Producción 360°',
     category: 'Eventos',
-    metric: 'Cobertura 360°',
+    metric: 'COBERTURA 360°',
     videoUrl: '/portfolio/eventos/eventos_5.mp4',
     posterUrl: '/portfolio/eventos/eventos_5_poster.jpg',
-    description: 'Resumen audiovisual de encuentros de comunidad, dinámicas y ponencias presenciales.'
+    description: 'Resumen audiovisual completo, contenido para reels/TikTok y captura de los momentos clave de la jornada.'
   },
 
   // LAS 2 CARAS
