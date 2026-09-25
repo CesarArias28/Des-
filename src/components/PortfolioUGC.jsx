@@ -51,12 +51,12 @@ const portfolioItems = [
   },
   {
     id: 6,
-    title: 'Activación Harina P.A.N.',
+    title: 'Empanada Club',
     category: 'UGC',
-    metric: 'ORGÁNICO VIRAL / ACTIVACIÓN',
+    metric: 'DEMOSTRACIÓN UGC / PRODUCTO',
     videoUrl: '/portfolio/ugc/ugc_4.mp4',
     posterUrl: '/portfolio/ugc/ugc_4_poster.jpg',
-    description: 'Contenido de humor con gancho rápido y formato POV en evento presencial, diseñado para conectar con la comunidad y generar engagement orgánico inmediato.'
+    description: 'Demostración de producto con narrativa natural y persuasiva, diseñada para generar antojo y conectar de forma orgánica.'
   },
   {
     id: 7,
@@ -78,12 +78,12 @@ const portfolioItems = [
   },
   {
     id: 9,
-    title: 'Moka Ritual Coffee',
+    title: 'Activación Harina P.A.N.',
     category: 'UGC',
-    metric: 'LIFESTYLE & UNBOXING',
+    metric: 'ORGÁNICO VIRAL / ACTIVACIÓN',
     videoUrl: '/portfolio/ugc/ugc_3.mp4',
     posterUrl: '/portfolio/ugc/ugc_3_poster.jpg',
-    description: 'Rutina de mañana estética e integración de producto enfocada en generar deseo de consumo e integrarlo de forma orgánico-aspiracional.'
+    description: 'Contenido de humor con gancho rápido y formato POV en evento presencial, diseñado para conectar con la comunidad y generar engagement orgánico inmediato.'
   },
 
   // MENTORÍAS
