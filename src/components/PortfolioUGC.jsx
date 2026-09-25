@@ -42,48 +42,48 @@ const portfolioItems = [
   // UGC
   {
     id: 5,
-    title: 'Contenido Lifestyle & Beauty',
+    title: 'Experiencia Brutal 58',
     category: 'UGC',
-    metric: 'Producción UGC',
+    metric: 'PRODUCCIÓN UGC / BRAND EXPERIENCE',
     videoUrl: '/portfolio/ugc/ugc_5.mp4',
     posterUrl: '/portfolio/ugc/ugc_5_poster.jpg',
-    description: 'Piezas audiovisuales pensadas para orgánico y campañas publicitarias.'
+    description: 'Cobertura experiencial y narrativa dinámica en las alturas para posicionar la marca a través de un storytelling gastronómico aspiracional y memorable.'
   },
   {
     id: 6,
-    title: 'Bloom Lip Oil',
+    title: 'Activación Harina P.A.N.',
     category: 'UGC',
-    metric: 'Orgánico Viral',
+    metric: 'ORGÁNICO VIRAL / ACTIVACIÓN',
     videoUrl: '/portfolio/ugc/ugc_4.mp4',
     posterUrl: '/portfolio/ugc/ugc_4_poster.jpg',
-    description: 'Demostración de producto con narrativa natural y persuasiva.'
+    description: 'Contenido de humor con gancho rápido y formato POV en evento presencial, diseñado para conectar con la comunidad y generar engagement orgánico inmediato.'
   },
   {
     id: 7,
-    title: 'CREA Proyecto & Equipo',
+    title: 'Flips POV Paraíso',
     category: 'UGC',
-    metric: 'Detrás de Cámaras',
+    metric: 'COMEDIA VIRAL / TREND',
     videoUrl: '/portfolio/ugc/ugc_2.mp4',
     posterUrl: '/portfolio/ugc/ugc_2_poster.jpg',
-    description: 'Montaje dinámico del equipo creativo y el ambiente de trabajo colaborativo.'
+    description: 'Pieza creativa en tendencia enfocada en identificación de marca y antojo, combinando dinamismo, humor y formato viral para retener a la audiencia.'
   },
   {
     id: 8,
-    title: 'CREA Espacio Creativo',
+    title: 'Cambio de Look Harmony',
     category: 'UGC',
-    metric: 'Contenido 9:16',
+    metric: 'LIFESTYLE & BEAUTY',
     videoUrl: '/portfolio/ugc/ugc_1.mp4',
     posterUrl: '/portfolio/ugc/ugc_1_poster.jpg',
-    description: 'Vídeo estético mostrando la experiencia y locación de CREA.'
+    description: 'Storytelling testimonial de principio a fin mostrando proceso y resultado de belleza, transmitiendo confianza y deseo de compra de manera orgánica.'
   },
   {
     id: 9,
     title: 'Moka Ritual Coffee',
     category: 'UGC',
-    metric: 'Lifestyle & Unboxing',
+    metric: 'LIFESTYLE & UNBOXING',
     videoUrl: '/portfolio/ugc/ugc_3.mp4',
     posterUrl: '/portfolio/ugc/ugc_3_poster.jpg',
-    description: 'Rutina de mañana estética incorporando preparación de café de especialidad.'
+    description: 'Rutina de mañana estética e integración de producto enfocada en generar deseo de consumo e integrarlo de forma orgánico-aspiracional.'
   },
 
   // MENTORÍAS
