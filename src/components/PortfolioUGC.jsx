@@ -6,37 +6,37 @@ const portfolioItems = [
     id: 1,
     title: 'Estrategia & Planificación',
     category: 'Social Media',
-    metric: 'SMM Estratégico',
+    metric: 'SMM ESTRATÉGICO',
     videoUrl: '/portfolio/social_media/social_media1.mp4',
     posterUrl: '/portfolio/social_media/social_media1_poster.jpg',
-    description: 'Transformamos la visión de tu marca en un plan de contenidos mensual que atrae y convierte.'
+    description: 'Definición de pilares de marca, calendarios tácticos y objetivos claros para construir una presencia sólida y medible.'
   },
   {
     id: 2,
     title: 'Gestión de Comunidad',
     category: 'Social Media',
-    metric: 'Engagement & Conexión',
+    metric: 'ENGAGEMENT & CONEXIÓN',
     videoUrl: '/portfolio/social_media/social_media2.mp4',
     posterUrl: '/portfolio/social_media/social_media2_poster.jpg',
-    description: 'Fidelización activa de clientes a través de interacciones reales que generan lealtad.'
+    description: 'Conexión activa con la audiencia, moderación y dinamización de interacciones para fidelizar seguidores.'
   },
   {
     id: 3,
     title: 'Dirección Creativa',
     category: 'Social Media',
-    metric: 'Identidad Visual',
+    metric: 'IDENTIDAD VISUAL',
     videoUrl: '/portfolio/social_media/social_media3.mp4',
     posterUrl: '/portfolio/social_media/social_media3_poster.jpg',
-    description: 'Un feed coherente, sofisticado y alineado con la personalidad premium de tu marca.'
+    description: 'Conceptualización visual, identidad gráfica y diseño de piezas clave adaptadas a los formatos de tendencia.'
   },
   {
     id: 4,
-    title: 'Estrategia de Contenido',
+    title: 'Producción de Contenido',
     category: 'Social Media',
-    metric: 'Producción Audiovisual',
+    metric: 'PRODUCCIÓN & ESTILO',
     videoUrl: '/portfolio/social_media/social_media4.mp4',
     posterUrl: '/portfolio/social_media/social_media4_poster.jpg',
-    description: 'Formateo audiovisual de alto rendimiento para maximizar alcance orgánico en Reels y TikTok.'
+    description: 'Grabación, edición y curaduría visual (reels/TikToks) enfocadas en captar retención y comunicar la esencia de la marca.'
   },
 
   // UGC
