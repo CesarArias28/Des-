@@ -116,7 +116,7 @@ const portfolioItems = [
   },
   {
     id: 13,
-    title: 'Confianza & Desbloqueo Creativo',
+    title: 'Confianza & Desbloqueo',
     category: 'Mentorías',
     metric: 'CONFIANZA DIGITAL',
     videoUrl: '/portfolio/mentorias/mentorias_4.mp4',
