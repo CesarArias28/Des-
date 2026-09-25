@@ -135,15 +135,6 @@ const portfolioItems = [
     description: 'Creación de contenido dinámico en tiempo real para capturar la energía de tus eventos VIP.'
   },
   {
-    id: 15,
-    title: 'Talleres & Workshops',
-    category: 'Eventos',
-    metric: 'Formación Presencial',
-    videoUrl: '/portfolio/eventos/eventos_2.mp4',
-    posterUrl: '/portfolio/eventos/eventos_2_poster.jpg',
-    description: 'Sesiones prácticas de oratoria y comunicación para potenciar el talento de tu equipo.'
-  },
-  {
     id: 16,
     title: 'Lanzamiento de Marca',
     category: 'Eventos',
@@ -210,7 +201,7 @@ const portfolioItems = [
   }
 ];
 
-const categories = ['UGC', 'Social Media', 'Mentorías', 'Eventos', 'Las 2 Caras'];
+const categories = ['UGC', 'Mentorías', 'Social Media', 'Eventos', 'Las 2 Caras'];
 
 // Individual Card Component to handle play-on-hover logic with refs
 const UgcCard = ({ item, onSelect }) => {
