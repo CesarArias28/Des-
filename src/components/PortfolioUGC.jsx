@@ -89,39 +89,39 @@ const portfolioItems = [
   // MENTORÍAS
   {
     id: 10,
-    title: 'Producción & Set CREA',
+    title: 'Oratoria & Cámara',
     category: 'Mentorías',
-    metric: 'WORKSHOP PRÁCTICO',
+    metric: 'PROGRAMA 1:1',
     videoUrl: '/portfolio/mentorias/mentorias_1.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_1_poster.jpg',
-    description: 'Entrenamiento intensivo presencial sobre dirección creativa, iluminación, grabación en estudio y producción de contenido profesional.'
+    description: 'Desenvolvimiento frente a cámara, lenguaje corporal y técnicas de modulación para comunicar con soltura.'
   },
   {
     id: 11,
-    title: 'Masterclass de Comunicación',
+    title: 'Marca Personal & Estrategia',
     category: 'Mentorías',
-    metric: 'COMUNICACIÓN ESTRATÉGICA',
+    metric: 'POSICIONAMIENTO',
     videoUrl: '/portfolio/mentorias/mentorias_2.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_2_poster.jpg',
-    description: 'Formación grupal presencial enfocada en oratoria, posicionamiento de marca y estructura de mensajes para comunicar con impacto.'
+    description: 'Construcción de tu propuesta de valor, pilares temáticos y autoridad en tu nicho digital.'
   },
   {
     id: 12,
-    title: 'Storytelling & Conexión',
+    title: 'Storytelling & Voz de Marca',
     category: 'Mentorías',
-    metric: 'CONFERENCIA & CHARLA',
+    metric: 'STORYTELLING 1:1',
     videoUrl: '/portfolio/mentorias/mentorias_3.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_3_poster.jpg',
-    description: 'Ponencia presencial sobre narrativa personal y superación, diseñada para conectar emocionalmente con la audiencia e inspirar a través del mensaje.'
+    description: 'Estructuras narrativas para conectar con las emociones de tu audiencia y transformar historias en ventas.'
   },
   {
     id: 13,
-    title: 'Eventos & Networking',
+    title: 'Confianza & Desbloqueo Creativo',
     category: 'Mentorías',
-    metric: 'MARCA & MENTALIDAD',
+    metric: 'CONFIANZA DIGITAL',
     videoUrl: '/portfolio/mentorias/mentorias_4.mp4',
     posterUrl: '/portfolio/mentorias/mentorias_4_poster.jpg',
-    description: 'Participación y ponencias en eventos de negocios y marketing, impulsando la mentalidad de crecimiento y visibilidad profesional.'
+    description: 'Superación de bloqueos frente a la cámara y desarrollo de un mensaje claro para proyectar seguridad.'
   },
 
   // EVENTOS
