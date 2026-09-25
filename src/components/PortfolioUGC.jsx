@@ -60,7 +60,7 @@ const portfolioItems = [
   },
   {
     id: 7,
-    title: 'Flips POV Paraíso',
+    title: 'Flips',
     category: 'UGC',
     metric: 'COMEDIA VIRAL / TREND',
     videoUrl: '/portfolio/ugc/ugc_2.mp4',
@@ -78,7 +78,7 @@ const portfolioItems = [
   },
   {
     id: 9,
-    title: 'Activación Harina P.A.N.',
+    title: 'Harina P.A.N.',
     category: 'UGC',
     metric: 'ORGÁNICO VIRAL / ACTIVACIÓN',
     videoUrl: '/portfolio/ugc/ugc_3.mp4',
