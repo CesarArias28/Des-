@@ -4,38 +4,38 @@ const testimonialItems = [
   {
     id: 1,
     name: 'DANIELA CISNEROS',
-    role: 'Mentorada 1:1 • Oratoria',
-    quote: '"Logré comunicar lo que hago con seguridad y soltura frente a la cámara."',
+    role: 'Maquilladora Profesional',
+    quote: '"Logré grabar contenido de máxima calidad para mi marca con un acompañamiento increíble."',
     videoUrl: '/testimonios/daniela_cisneros.mp4',
     posterUrl: '/testimonios/daniela_cisneros_poster.jpg',
-    metric: 'Mentoría Oratoria'
+    metric: 'CONTENIDO DE MARCA'
   },
   {
     id: 2,
     name: 'LAURA CORTÉS',
-    role: 'Mentorada 1:1 • Comunicación',
-    quote: '"El acompañamiento de Des me dio las herramientas clave para hablar con confianza."',
+    role: 'Mentorada 1:1 • Oratoria',
+    quote: '"Es la guía ideal si no sabes por dónde empezar a grabarte ni cómo quitarte el miedo a la cámara."',
     videoUrl: '/testimonios/laura_cortes.mp4',
     posterUrl: '/testimonios/laura_cortes_poster.jpg',
-    metric: 'Mentoría Oratoria'
+    metric: 'PERDER EL MIEDO'
   },
   {
     id: 3,
     name: 'LINA LUNADEMI',
     role: 'Creadora & Emprendedora',
-    quote: '"Encontré la forma auténtica de transmitir el valor y la esencia de mi marca."',
+    quote: '"Aprendí a estructurar guiones, ganar soltura frente a la cámara y activar mi contenido en redes."',
     videoUrl: '/testimonios/lina_lunademi.mp4',
     posterUrl: '/testimonios/lina_lunademi_poster.jpg',
-    metric: 'Marca Personal'
+    metric: 'GUIONES & ESTRUCTURA'
   },
   {
     id: 4,
     name: 'MARCELA CASTAÑO',
-    role: 'Mentorada 1:1 • Estrategia',
-    quote: '"Des me ayudó a estructurar mis ideas y perder el temor a exponerme en redes."',
+    role: 'Mentorada 1:1 • Oratoria',
+    quote: '"Me ayudó a corregir muletillas, perder el miedo a hablar a la cámara y transmitir seguridad."',
     videoUrl: '/testimonios/marcela_castano.mp4',
     posterUrl: '/testimonios/marcela_castano_poster.jpg',
-    metric: 'Mentoría & Estrategia'
+    metric: 'MULETILLAS & CONFIANZA'
   }
 ];
 
